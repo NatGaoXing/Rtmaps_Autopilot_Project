@@ -332,11 +332,6 @@ class World(object):
             self.player.destroy()
 
 
-# ==============================================================================
-# -- KeyboardControl -----------------------------------------------------------
-# ==============================================================================
-
-
 class KeyboardControl(object):
     """Class that handles keyboard input."""
 
@@ -599,11 +594,6 @@ class KeyboardControl(object):
         return (key == K_ESCAPE) or (key == K_q and pygame.key.get_mods() & KMOD_CTRL)
 
 
-# ==============================================================================
-# -- HUD -----------------------------------------------------------------------
-# ==============================================================================
-
-
 class HUD(object):
     def __init__(self, width, height):
         self.dim = (width, height)
@@ -740,11 +730,6 @@ class HUD(object):
         self.help.render(display)
 
 
-# ==============================================================================
-# -- FadingText ----------------------------------------------------------------
-# ==============================================================================
-
-
 class FadingText(object):
     def __init__(self, font, dim, pos):
         self.font = font
@@ -767,11 +752,6 @@ class FadingText(object):
 
     def render(self, display):
         display.blit(self.surface, self.pos)
-
-
-# ==============================================================================
-# -- HelpText ------------------------------------------------------------------
-# ==============================================================================
 
 
 class HelpText(object):
@@ -798,11 +778,6 @@ class HelpText(object):
     def render(self, display):
         if self._render:
             display.blit(self.surface, self.pos)
-
-
-# ==============================================================================
-# -- CollisionSensor -----------------------------------------------------------
-# ==============================================================================
 
 
 class CollisionSensor(object):
@@ -839,11 +814,6 @@ class CollisionSensor(object):
             self.history.pop(0)
 
 
-# ==============================================================================
-# -- LaneInvasionSensor --------------------------------------------------------
-# ==============================================================================
-
-
 class LaneInvasionSensor(object):
     def __init__(self, parent_actor, hud):
         self.sensor = None
@@ -865,11 +835,6 @@ class LaneInvasionSensor(object):
         lane_types = set(x.type for x in event.crossed_lane_markings)
         text = ['%r' % str(x).split()[-1] for x in lane_types]
         self.hud.notification('Crossed line %s' % ' and '.join(text))
-
-
-# ==============================================================================
-# -- GnssSensor ----------------------------------------------------------------
-# ==============================================================================
 
 
 class GnssSensor(object):
@@ -897,11 +862,6 @@ class GnssSensor(object):
         self.lon = event.longitude
         self.alt = event.altitude
         self.ts = event.timestamp
-
-
-# ==============================================================================
-# -- IMUSensor -----------------------------------------------------------------
-# ==============================================================================
 
 
 class IMUSensor(object):
@@ -936,11 +896,6 @@ class IMUSensor(object):
             max(limits[0], min(limits[1], math.degrees(sensor_data.gyroscope.y))),
             max(limits[0], min(limits[1], math.degrees(sensor_data.gyroscope.z))))
         self.compass = math.degrees(sensor_data.compass)
-
-
-# ==============================================================================
-# -- RadarSensor ---------------------------------------------------------------
-# ==============================================================================
 
 
 class RadarSensor(object):
@@ -997,11 +952,6 @@ class RadarSensor(object):
                 life_time=0.06,
                 persistent_lines=False,
                 color=carla.Color(r, g, b))
-
-
-# ==============================================================================
-# -- CameraManager -------------------------------------------------------------
-# ==============================================================================
 
 
 class CameraManager(object):
@@ -1131,11 +1081,6 @@ class CameraManager(object):
             image.save_to_disk('_out/%08d' % image.frame)
 
 
-# ==============================================================================
-# -- game_loop() ---------------------------------------------------------------
-# ==============================================================================
-
-
 def game_loop(args):
     pygame.init()
     pygame.font.init()
@@ -1173,11 +1118,6 @@ def game_loop(args):
             world.destroy()
 
         pygame.quit()
-
-
-# ==============================================================================
-# -- main() --------------------------------------------------------------------
-# ==============================================================================
 
 
 def main():

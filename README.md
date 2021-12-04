@@ -20,6 +20,11 @@ In /python_script
 Change line 13 the installation path of your Carla for example :
 CARLA_PYTHON_DIRECTORY = "C:/Users/XXX XXX/Desktop/CARLA_0.9.11/WindowsNoEditor/PythonAPI"
 
+In /python_script
+/Location_Record_AMI.py
+Change line 15 the path where the reference trajectory needs to be recorded :
+C:/Users/XXX XXX/Desktop/RtMapsGit/Rtmaps_Autopilot_Project/AMI_Project/data/record_data.xlsx
+
 ****************************************************************************************************
 To configure your python-bridge
 Use command	where python	in your command window to find your python 3.7 installation path for example :

@@ -1,3 +1,4 @@
+import numpy as np
 import rtmaps.types
 import rtmaps.core as rt
 import rtmaps.reading_policy
@@ -9,6 +10,8 @@ import sys
 
 from queue import Queue
 from queue import Empty
+
+from openpyxl import Workbook, load_workbook
 
 CARLA_PYTHON_DIRECTORY = "C:/Users/GAO Xing/Desktop/CARLA_0.9.11/WindowsNoEditor/PythonAPI"
 
@@ -36,6 +39,7 @@ except ImportError:
 from carla import VehicleLightState as vls
 
 from Manual_Control_AMI import *
+# from Record_Data_AMI import *
 
 
 def sensor_callback(data, queue):
@@ -49,7 +53,7 @@ def getPose(world):
 
     roll = np.radians(t.rotation.roll)
     pitch = np.radians(-t.rotation.pitch)
-    yaw = np.radians(np.radians(-t.rotation.yaw))  # np.radians(-t.rotation.yaw)
+    yaw = np.radians(np.radians(-t.rotation.yaw))
 
     return speedKmh, world.imu_sensor.accelerometer, world.imu_sensor.gyroscope, (
         world.gnss_sensor.lat, world.gnss_sensor.lon, world.gnss_sensor.alt), roll, pitch, yaw, world.gnss_sensor.ts
@@ -150,6 +154,7 @@ class rtmaps_python(BaseComponent):
 
         self.add_input("in", rtmaps.types.ANY)
 
+        self.add_output("location", rtmaps.types.FLOAT64)
         self.add_output("speedKmh", rtmaps.types.FLOAT64)
         self.add_output("accXYZ", rtmaps.types.FLOAT64)
         self.add_output("gyroXYZ", rtmaps.types.FLOAT64)
@@ -272,23 +277,18 @@ class rtmaps_python(BaseComponent):
                     self.outputs["imageCamera"].write(image_data.raw_data)
 
         if self.properties["lidarEnabled"].data:
-            # lidar_data = "1"
             while self.lidar_queue.qsize() > 0:  # clear the queue
                 lidar_data = ""
                 try:
-                    # lidar_data = self.lidar_queue.get(False, 1.0)
                     lidar_data = self.lidar_queue.get(False)
                 except Empty:
                     print("[Warning] Some sensor data has been missed")
-                # print ("queue size ="+str(self.lidar_queue.qsize()))
                 if len(lidar_data) > 0:
 
                     timeStampUs = rt.current_time()
                     if self.properties["UseSimulationTimeStamp"].data:
                         timeStampUs = int(lidar_data.timestamp * 1000000.0)
 
-                    # print ("!!!some lidar data"+str(timeStampUs))
-                    # p_cloud_size = len(lidar_data)
                     p_cloud = np.copy(np.frombuffer(lidar_data.raw_data, dtype=np.dtype('f4')))
                     points = np.reshape(p_cloud, (int(p_cloud.shape[0] / 4), 4))  # x y z intensity
                     # mise dans les axes main droite des donnes lidar
@@ -298,23 +298,25 @@ class rtmaps_python(BaseComponent):
                     p_cloud[:, 2] = points[:, 2]  # -z
 
                     p_cloud = p_cloud.reshape(-1).astype("float64")
-                    # print ("p_cloud.shape="+str(p_cloud.shape))
-
                     self.outputs["ptCloud"].write(p_cloud, ts=timeStampUs)
-                    # lidar_data = ""
 
-        # send output
         speedKmh, accx3, gyrox3, imu3, roll, pitch, yaw, gnssTS = \
             getPose(self.world)
         timeStampUs = rt.current_time()
+
         if self.properties["UseSimulationTimeStamp"].data:
             timeStampUs = int(gnssTS * 1000000.0)
+
+        # send output
+        # recordPose(self.world, self.wb, self.ws)
+        gps_x = self.world.player.get_transform().location.x
+        gps_y = self.world.player.get_transform().location.y
+        self.outputs["location"].write(np.array([gps_x, gps_y]), ts=timeStampUs)
 
         self.outputs["speedKmh"].write(np.array([speedKmh]), ts=timeStampUs)
         self.outputs["accXYZ"].write(np.array(accx3), ts=timeStampUs)
         self.outputs["gyroXYZ"].write(np.array(gyrox3), ts=timeStampUs)
         self.outputs["imuLatLongAlt"].write(np.array(imu3), ts=timeStampUs)
-        # yaw -= math.pi
         self.outputs["rollPitchYaw"].write(np.array([roll, pitch, (-yaw)]), ts=timeStampUs)
 
     def spawnVehicles(self, number_of_vehicles):
@@ -341,10 +343,6 @@ class rtmaps_python(BaseComponent):
             print("warning  requested " + str(number_of_vehicles) + " vehicles, number of spawn points is " + str(
                 number_of_spawn_points))
             number_of_vehicles = number_of_spawn_points
-
-        # --------------
-        # Spawn vehicles
-        # --------------
         batch = []
         for n, transform in enumerate(spawn_points):
             if n >= number_of_vehicles:

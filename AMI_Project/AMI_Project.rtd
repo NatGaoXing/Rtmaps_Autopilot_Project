@@ -88,7 +88,7 @@
     <Property LongName="Break_converter.priority" Type="1">128</Property>
     <Property LongName="Break_converter.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="Front_Camera" Model="ImageViewer" Version="1.23.2" x="1024" y="344" z="0">
+  <Component InstanceName="Front_Camera" Model="ImageViewer" Version="1.23.2" x="1160" y="360" z="0">
     <Input LongName="Front_Camera.input" Name="input">
       <Property LongName="Front_Camera.input.readerType" Type="1">2</Property>
       <Property LongName="Front_Camera.input.subsampling" Type="1">1</Property>
@@ -128,7 +128,7 @@
     <Property LongName="Front_Camera.priority" Type="1">128</Property>
     <Property LongName="Front_Camera.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="Image_Processing" Model="PythonBridge" Version="3.2.0" x="872" y="344" z="0">
+  <Component InstanceName="Image_Processing" Model="PythonBridge" Version="3.2.0" x="968" y="360" z="0">
     <Input LongName="Image_Processing.in" Name="in">
       <Property LongName="Image_Processing.in.readerType" Type="1">0</Property>
       <Property LongName="Image_Processing.in.subsampling" Type="1">1</Property>
@@ -148,14 +148,14 @@
     <Property LongName="Image_Processing.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Image_Processing.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Image_Processing.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="Image_Processing.pythonPID" Type="1">7412</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Image_Processing.pythonPID" Type="1">8516</ReadOnlyProperty>
     <Property LongName="Image_Processing.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Image_Processing.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Image_Processing.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
     <Property LongName="Image_Processing.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[]]></Property>
-    <Property LongName="Image_Processing.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/GAO Xing/RTMaps-4.0/python_log/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../RTMaps-4.0/python_log]]></Relative></Property>
+    <Property LongName="Image_Processing.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/GAO Xing/RTMaps-4.0/python_log/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../RTMaps-4.0/python_log]]></Relative></Property>
     <Property LongName="Image_Processing.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="Image_Processing.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/GAO Xing/Desktop/RtMaps Projects/AMI_Project/python_script/Image_Processing_AMI.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/python_script/Image_Processing_AMI.py]]></Relative></Property>
+    <Property LongName="Image_Processing.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/GAO Xing/Desktop/RtMapsGit/Rtmaps_Autopilot_Project/AMI_Project/python_script/Image_Processing_AMI.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/python_script/Image_Processing_AMI.py]]></Relative></Property>
     <Property LongName="Image_Processing.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
     <ReadOnlyProperty LongName="Image_Processing.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Image_Processing.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
@@ -179,9 +179,9 @@
     <Property LongName="is_auto_pilot.hidden" Type="0">false</Property>
     <Property LongName="is_auto_pilot.title" Type="3"><![CDATA[]]></Property>
     <Property LongName="is_auto_pilot.x" Type="1">299</Property>
-    <Property LongName="is_auto_pilot.y" Type="1">906</Property>
-    <Property LongName="is_auto_pilot.width" Type="1">90</Property>
-    <Property LongName="is_auto_pilot.height" Type="1">60</Property>
+    <Property LongName="is_auto_pilot.y" Type="1">876</Property>
+    <Property LongName="is_auto_pilot.width" Type="1">218</Property>
+    <Property LongName="is_auto_pilot.height" Type="1">95</Property>
     <Property LongName="is_auto_pilot.end_guard" Type="0" SubType="128">true</Property>
     <ReadOnlyProperty LongName="is_auto_pilot.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="is_auto_pilot.vector_begin_config" Type="3" SubType="256"><![CDATA[Multiple Widgets Configuration]]></ReadOnlyProperty>
@@ -192,7 +192,7 @@
     <ReadOnlyProperty LongName="is_auto_pilot.vector_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
     <ReadOnlyProperty LongName="is_auto_pilot.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
     <Property LongName="is_auto_pilot.text0" Type="3"><![CDATA[Auto Pilot]]></Property>
-    <Property LongName="is_auto_pilot.currentState0" Type="1">1</Property>
+    <Property LongName="is_auto_pilot.currentState0" Type="1">0</Property>
     <ReadOnlyProperty LongName="is_auto_pilot.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
     <Property LongName="is_auto_pilot.threaded" Type="0">true</Property>
     <Property LongName="is_auto_pilot.priority" Type="1">128</Property>
@@ -244,7 +244,7 @@
     <Property LongName="is_reverse_converter.priority" Type="1">128</Property>
     <Property LongName="is_reverse_converter.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="Lidar" Model="GL2_3D_Viewer" Version="1.56.1" x="1024" y="224" z="0">
+  <Component InstanceName="Lidar" Model="GL2_3D_Viewer" Version="1.56.1" x="1160" y="224" z="0">
     <Input LongName="Lidar.object_2_data" Name="object_2_data">
       <Property LongName="Lidar.object_2_data.readerType" Type="1">2</Property>
       <Property LongName="Lidar.object_2_data.subsampling" Type="1">1</Property>
@@ -334,8 +334,8 @@
     <ReadOnlyProperty LongName="Lidar.viewport_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Lidar.window_subsection_begin" Type="3" SubType="256"><![CDATA[Window]]></ReadOnlyProperty>
     <Property LongName="Lidar.title" Type="3"><![CDATA[]]></Property>
-    <Property LongName="Lidar.left" Type="1">1351</Property>
-    <Property LongName="Lidar.top" Type="1">200</Property>
+    <Property LongName="Lidar.left" Type="1">1356</Property>
+    <Property LongName="Lidar.top" Type="1">377</Property>
     <Property LongName="Lidar.width" Type="1">415</Property>
     <Property LongName="Lidar.height" Type="1">311</Property>
     <Property LongName="Lidar.windowBackend" Type="4"><![CDATA[1|0|Win32]]></Property>
@@ -357,6 +357,85 @@
     <Property LongName="Lidar.threaded" Type="0">true</Property>
     <Property LongName="Lidar.priority" Type="1">128</Property>
     <Property LongName="Lidar.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Location" Model="DataViewer" Version="2.0.10" x="1160" y="72" z="0">
+    <Input LongName="Location.input_0" Name="input_0">
+      <Property LongName="Location.input_0.readerType" Type="1">4</Property>
+      <Property LongName="Location.input_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="Location.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="Location.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="Location.autoDirty" Type="0">true</Property>
+    <Property LongName="Location.run" Type="0">true</Property>
+    <Property LongName="Location.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="Location.moveable" Type="0">true</Property>
+    <Property LongName="Location.hidden" Type="0">false</Property>
+    <Property LongName="Location.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="Location.x" Type="1">158</Property>
+    <Property LongName="Location.y" Type="1">553</Property>
+    <Property LongName="Location.width" Type="1">360</Property>
+    <Property LongName="Location.height" Type="1">323</Property>
+    <Property LongName="Location.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="Location.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Location.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="Location.nbInputs" Type="1">1</Property>
+    <Property LongName="Location.compactMode" Type="0">false</Property>
+    <Property LongName="Location.showInfo" Type="0">true</Property>
+    <Property LongName="Location.showData" Type="0">true</Property>
+    <Property LongName="Location.showPrettyTimestamp" Type="0">true</Property>
+    <Property LongName="Location.float32Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="Location.float64Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="Location.integer8Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="Location.integer16Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="Location.integer32Format" Type="3"><![CDATA[%I32d]]></Property>
+    <Property LongName="Location.integer64Format" Type="3"><![CDATA[%I64d]]></Property>
+    <Property LongName="Location.unsignedInteger8Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="Location.unsignedInteger16Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="Location.unsignedInteger32Format" Type="3"><![CDATA[%I32u]]></Property>
+    <Property LongName="Location.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
+    <Property LongName="Location.hexDisplay" Type="0">false</Property>
+    <Property LongName="Location.internalState" Type="3" SubType="128"><![CDATA[238;112]]></Property>
+    <Property LongName="Location.expandedState" Type="3" SubType="128"><![CDATA[1|Location_Record.out;0|Info:Location_Record.out;1|Data:Location_Record.out]]></Property>
+    <ReadOnlyProperty LongName="Location.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="Location.threaded" Type="0">true</Property>
+    <Property LongName="Location.priority" Type="1">128</Property>
+    <Property LongName="Location.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Location_Record" Model="PythonBridge" Version="3.2.0" x="968" y="72" z="0">
+    <Input LongName="Location_Record.in" Name="in">
+      <Property LongName="Location_Record.in.readerType" Type="1">0</Property>
+      <Property LongName="Location_Record.in.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="Location_Record.out" Name="out">
+      <Property LongName="Location_Record.out.subsampling" Type="1">1</Property>
+      <Property LongName="Location_Record.out.fifosize" Type="1">16</Property>
+      <Property LongName="Location_Record.out.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Location_Record.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="Location_Record.internalInputs" Type="3" SubType="128"><![CDATA[in;1==]]></Property>
+    <Property LongName="Location_Record.internalOutputs" Type="3" SubType="128"><![CDATA[out;0==;0]]></Property>
+    <Property LongName="Location_Record.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="Location_Record.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="Location_Record.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="Location_Record.logDebug" Type="0">false</Property>
+    <Property LongName="Location_Record.showTracebackInConsole" Type="0">true</Property>
+    <Property LongName="Location_Record.autoReloadSubModules" Type="0">true</Property>
+    <Property LongName="Location_Record.memorySize" Type="1">10000000</Property>
+    <ReadOnlyProperty LongName="Location_Record.pythonPID" Type="1">20204</ReadOnlyProperty>
+    <Property LongName="Location_Record.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="Location_Record.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Location_Record.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="Location_Record.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[]]></Property>
+    <Property LongName="Location_Record.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/GAO Xing/RTMaps-4.0/python_log/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../RTMaps-4.0/python_log]]></Relative></Property>
+    <Property LongName="Location_Record.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="Location_Record.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/GAO Xing/Desktop/RtMapsGit/Rtmaps_Autopilot_Project/AMI_Project/python_script/Location_Record_AMI.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/python_script/Location_Record_AMI.py]]></Relative></Property>
+    <Property LongName="Location_Record.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
+    <ReadOnlyProperty LongName="Location_Record.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Location_Record.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Location_Record.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="Location_Record.threaded" Type="0">true</Property>
+    <Property LongName="Location_Record.priority" Type="1">128</Property>
+    <Property LongName="Location_Record.autoStart" Type="0">true</Property>
   </Component>
   <Component InstanceName="Offset" Model="vectors_scale_and_offset" Version="1.1.2" x="968" y="224" z="0">
     <Input LongName="Offset.input" Name="input">
@@ -390,7 +469,7 @@
     <Property LongName="Steer.hidden" Type="0">false</Property>
     <Property LongName="Steer.title" Type="3"><![CDATA[]]></Property>
     <Property LongName="Steer.x" Type="1">1</Property>
-    <Property LongName="Steer.y" Type="1">868</Property>
+    <Property LongName="Steer.y" Type="1">872</Property>
     <Property LongName="Steer.width" Type="1">300</Property>
     <Property LongName="Steer.height" Type="1">100</Property>
     <Property LongName="Steer.end_guard" Type="0" SubType="128">true</Property>
@@ -407,7 +486,7 @@
     <Property LongName="Steer.min0" Type="2">-1</Property>
     <Property LongName="Steer.max0" Type="2">1</Property>
     <Property LongName="Steer.mode0" Type="4"><![CDATA[2|0|Continous|Step]]></Property>
-    <Property LongName="Steer.value0" Type="2">-0.008410428932</Property>
+    <Property LongName="Steer.value0" Type="2">0</Property>
     <Property LongName="Steer.samplingTime0" Type="1" SubType="1">50000</Property>
     <Property LongName="Steer.step0" Type="1">1</Property>
     <ReadOnlyProperty LongName="Steer.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
@@ -449,7 +528,7 @@
     <Property LongName="Throttle_and_Brake.moveable" Type="0">true</Property>
     <Property LongName="Throttle_and_Brake.hidden" Type="0">false</Property>
     <Property LongName="Throttle_and_Brake.title" Type="3"><![CDATA[]]></Property>
-    <Property LongName="Throttle_and_Brake.x" Type="1">-1</Property>
+    <Property LongName="Throttle_and_Brake.x" Type="1">0</Property>
     <Property LongName="Throttle_and_Brake.y" Type="1">553</Property>
     <Property LongName="Throttle_and_Brake.width" Type="1">159</Property>
     <Property LongName="Throttle_and_Brake.height" Type="1">320</Property>
@@ -503,6 +582,11 @@
       <Property LongName="Vehicle.in.readerType" Type="1">0</Property>
       <Property LongName="Vehicle.in.subsampling" Type="1">1</Property>
     </Input>
+    <Output LongName="Vehicle.location" Name="location">
+      <Property LongName="Vehicle.location.subsampling" Type="1">1</Property>
+      <Property LongName="Vehicle.location.fifosize" Type="1">16</Property>
+      <Property LongName="Vehicle.location.periodic" Type="0">false</Property>
+    </Output>
     <Output LongName="Vehicle.speedKmh" Name="speedKmh">
       <Property LongName="Vehicle.speedKmh.subsampling" Type="1">1</Property>
       <Property LongName="Vehicle.speedKmh.fifosize" Type="1">16</Property>
@@ -540,7 +624,7 @@
     </Output>
     <Property LongName="Vehicle.guard_begin" Type="0" SubType="128">true</Property>
     <Property LongName="Vehicle.internalInputs" Type="3" SubType="128"><![CDATA[in;1==]]></Property>
-    <Property LongName="Vehicle.internalOutputs" Type="3" SubType="128"><![CDATA[speedKmh;11==;0#accXYZ;11==;0#gyroXYZ;11==;0#imuLatLongAlt;11==;0#rollPitchYaw;11==;0#ptCloud;11==;100000#imageCamera;0==;0]]></Property>
+    <Property LongName="Vehicle.internalOutputs" Type="3" SubType="128"><![CDATA[location;11==;0#speedKmh;11==;0#accXYZ;11==;0#gyroXYZ;11==;0#imuLatLongAlt;11==;0#rollPitchYaw;11==;0#ptCloud;11==;100000#imageCamera;0==;0]]></Property>
     <Property LongName="Vehicle.internalProperties" Type="3" SubType="128"><![CDATA[HOST||13||127.0.0.1||13#PORT||8||2000#WIDTH||8||1280#HEIGHT||8||720#Gamma||11||2.2#Rolename||13||hero||13#Filter||13||vehicle.bwm.i*||13#TM_PORT||8||8000#UseSimulationTimeStamp||23||1#WalkerNumberToSpawn||8||0#VehiclesNumberToSpawn||8||0#AutoSpawnVehicle||23||0#CAR_LOCATION_X||11||-8.31#CAR_LOCATION_Y||11||25.91#CAR_LOCATION_Z||11||2#CAR_LOCATION_RX||11||0#CAR_LOCATION_RY||11||0#CAR_LOCATION_RZ||11||78.62#lidarEnabled||23||1#LIDAR_MAX_RANGE_IN_M||11||50#LIDAR_NB_LAYERS||8||16#LIDAR_ROTATION_FREQUENCY_HZ||8||20#LIDAR_UPPER_FOV_IN_DEG||8||15#LIDAR_LOWER_FOV_IN_DEG||8||-15#LIDAR_NOISE_IN_M||11||0.02#LIDAR_CAR_LOCATION_X||11||1#LIDAR_CAR_LOCATION_Y||11||0#LIDAR_CAR_LOCATION_Z||11||1.8#LIDAR_CAR_LOCATION_RX||11||0#LIDAR_CAR_LOCATION_RY||11||0#LIDAR_CAR_LOCATION_RZ||11||0#cameraEnabled||23||1#CAMERA_IMAGE_WIDTH||8||640#CAMERA_IMAGE_HEIGHT||8||480#CAMERA_IMAGE_FOV||11||69#CAMERA_LOCATION_X||11||1.5#CAMERA_LOCATION_Y||11||-0.1#CAMERA_LOCATION_Z||11||1.8#CAMERA_LOCATION_RX||11||0#CAMERA_LOCATION_RY||11||-15#CAMERA_LOCATION_RZ||11||0]]></Property>
     <ReadOnlyProperty LongName="Vehicle.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
     <Property LongName="Vehicle.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
@@ -548,14 +632,14 @@
     <Property LongName="Vehicle.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Vehicle.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Vehicle.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="Vehicle.pythonPID" Type="1">19924</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Vehicle.pythonPID" Type="1">14968</ReadOnlyProperty>
     <Property LongName="Vehicle.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Vehicle.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Vehicle.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
     <Property LongName="Vehicle.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[AUTO/]]></Property>
-    <Property LongName="Vehicle.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/GAO Xing/RTMaps-4.0/python_log/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../RTMaps-4.0/python_log]]></Relative></Property>
+    <Property LongName="Vehicle.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/GAO Xing/RTMaps-4.0/python_log/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../RTMaps-4.0/python_log]]></Relative></Property>
     <Property LongName="Vehicle.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="Vehicle.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/GAO Xing/Desktop/RtMaps Projects/AMI_Project/python_script/Rtmaps_Control_AMI.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/python_script/Rtmaps_Control_AMI.py]]></Relative></Property>
+    <Property LongName="Vehicle.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/GAO Xing/Desktop/RtMapsGit/Rtmaps_Autopilot_Project/AMI_Project/python_script/Rtmaps_Control_AMI.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/python_script/Rtmaps_Control_AMI.py]]></Relative></Property>
     <Property LongName="Vehicle.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
     <ReadOnlyProperty LongName="Vehicle.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Vehicle.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
@@ -616,6 +700,8 @@
   <Connection Output="is_auto_pilot.state0" Input="is_auto_pilot_converter.input"/>
   <Connection Output="is_reverse_0.o_float64" Input="is_reverse_converter.input"/>
   <Connection Output="Offset.output" Input="Lidar.object_2_data"/>
+  <Connection Output="Location_Record.out" Input="Location.input_0"/>
+  <Connection Output="Vehicle.location" Input="Location_Record.in"/>
   <Connection Output="Vehicle.ptCloud" Input="Offset.input"/>
   <Connection Output="Steer.output0" Input="Steer_converter.input"/>
   <Connection Output="Throttle_and_Brake.output0" Input="Throttle_converter.input"/>
@@ -764,6 +850,8 @@
     <ConnectionShape InstanceName="Led_1.input0" color="0"/>
     <ConnectionShape InstanceName="Led_1.input1" color="0"/>
     <ConnectionShape InstanceName="Lidar.object_2_data" color="0"/>
+    <ConnectionShape InstanceName="Location.input_0" color="0"/>
+    <ConnectionShape InstanceName="Location_Record.in" color="0"/>
     <ConnectionShape InstanceName="Longi_speed.A" color="0"/>
     <ConnectionShape InstanceName="Longi_speed.Stop" color="0"/>
     <ConnectionShape InstanceName="numbers_converter_12.input" color="0"/>

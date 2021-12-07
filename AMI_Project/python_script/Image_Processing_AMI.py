@@ -39,7 +39,12 @@ def warp(img):
     M = cv2.getPerspectiveTransform(src, dst)
     warped = cv2.warpPerspective(img, M, img_size)
 
-    return warped
+    kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (2, 2))
+    kernel1 = cv2.getStructuringElement(cv2.MORPH_RECT, (10, 10))
+    img_Erode_warped = cv2.erode(warped, kernel)
+    img_Dialate_warped = cv2.dilate(img_Erode_warped, kernel1)
+
+    return img_Dialate_warped
 
 
 def binary_thresholded(img):  # TODO Test with opencv on the real camera of AMI and in Simulation
@@ -56,7 +61,7 @@ def binary_thresholded(img):  # TODO Test with opencv on the real camera of AMI 
 
     # Detect pixels that are white in the grayscale image
     white_binary = np.zeros_like(gray_img)
-    white_binary[(gray_img > 200) & (gray_img <= 255)] = 1  # 200,255
+    white_binary[(gray_img > 220) & (gray_img <= 255)] = 1  # 200,255
 
     # Convert image to HLS
     hls = cv2.cvtColor(img, cv2.COLOR_BGR2HLS)
@@ -68,7 +73,7 @@ def binary_thresholded(img):  # TODO Test with opencv on the real camera of AMI 
 
     hue_binary = np.zeros_like(H)
     # Detect pixels that are yellow using the hue component
-    hue_binary[(H > 15) & (H <= 25)] = 1  # 10, 25
+    hue_binary[(H > 65) & (H <= 80)] = 1  # 10, 25
 
     # Combine all pixels detected above
     binary_1 = cv2.bitwise_or(sx_binary, white_binary)

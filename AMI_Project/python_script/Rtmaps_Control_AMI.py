@@ -154,7 +154,7 @@ class rtmaps_python(BaseComponent):
 
         self.add_input("in", rtmaps.types.ANY)
 
-        self.add_output("location", rtmaps.types.FLOAT64)
+        self.add_output("state", rtmaps.types.FLOAT64)
         self.add_output("speedKmh", rtmaps.types.FLOAT64)
         self.add_output("accXYZ", rtmaps.types.FLOAT64)
         self.add_output("gyroXYZ", rtmaps.types.FLOAT64)
@@ -311,7 +311,8 @@ class rtmaps_python(BaseComponent):
         # recordPose(self.world, self.wb, self.ws)
         gps_x = self.world.player.get_transform().location.x
         gps_y = self.world.player.get_transform().location.y
-        self.outputs["location"].write(np.array([gps_x, gps_y]), ts=timeStampUs)
+        gps_yaw = self.world.player.get_transform().rotation.yaw
+        self.outputs["state"].write(np.array([gps_x, gps_y, gps_yaw]), ts=timeStampUs)
 
         self.outputs["speedKmh"].write(np.array([speedKmh]), ts=timeStampUs)
         self.outputs["accXYZ"].write(np.array(accx3), ts=timeStampUs)

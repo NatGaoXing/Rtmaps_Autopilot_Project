@@ -482,7 +482,7 @@
 0.0 0.0 1.0 0.0
 0.0 0.0 0.0 1.0
 ]]></Property>
-    <Property LongName="GL2_3D_Viewer_1_1.object_3_file" Type="3" SubType="80"><![CDATA[C:/Users/Nicolas/Documents/UTAC Local/2021_12_08/sansvitre.xyzrgb]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../UTAC Local/2021_12_08/sansvitre.xyzrgb]]></Relative></Property>
+    <Property LongName="GL2_3D_Viewer_1_1.object_3_file" Type="3" SubType="80"><![CDATA[C:\Users\Nicolas\Documents\GitHub\Rtmaps_Autopilot_Project\AMI_Project\sansvitre.xyzrgb]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/sansvitre.xyzrgb]]></Relative></Property>
     <Property LongName="GL2_3D_Viewer_1_1.object_3_size" Type="2">1</Property>
     <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1.object_3_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1.objects_subsection_end" Type="0" SubType="512">true</ReadOnlyProperty>
@@ -688,7 +688,7 @@
     <ReadOnlyProperty LongName="Location_Play.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
     <Property LongName="Location_Play.threaded" Type="0">true</Property>
     <Property LongName="Location_Play.priority" Type="1">128</Property>
-    <Property LongName="Location_Play.autoStart" Type="0">true</Property>
+    <Property LongName="Location_Play.autoStart" Type="0">false</Property>
   </Component>
   <Component InstanceName="Longi_speed_1" Model="PythonBridge" Version="3.0.3" x="1248" y="784" z="0">
     <Input LongName="Longi_speed_1.A" Name="A">

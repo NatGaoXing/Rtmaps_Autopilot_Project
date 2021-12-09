@@ -111,14 +111,14 @@
     <Property LongName="AngleErreur_1_1.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="AngleErreur_1_1.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="AngleErreur_1_1.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="AngleErreur_1_1.pythonPID" Type="1">13392</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="AngleErreur_1_1.pythonPID" Type="1">14236</ReadOnlyProperty>
     <Property LongName="AngleErreur_1_1.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="AngleErreur_1_1.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="AngleErreur_1_1.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
     <Property LongName="AngleErreur_1_1.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[]]></Property>
     <Property LongName="AngleErreur_1_1.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/Nicolas/RTMaps-4.0/python_log/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../RTMaps-4.0/python_log]]></Relative></Property>
     <Property LongName="AngleErreur_1_1.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="AngleErreur_1_1.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/Nicolas/Documents/UTAC Local/UTAC S8/angleErreur.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../UTAC Local/UTAC S8/angleErreur.py]]></Relative></Property>
+    <Property LongName="AngleErreur_1_1.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/Nicolas/Documents/GitHub/Rtmaps_Autopilot_Project/AMI_Project/python_script - S8/angleErreur.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/python_script - S8/angleErreur.py]]></Relative></Property>
     <Property LongName="AngleErreur_1_1.readingPolicy" Type="4"><![CDATA[4|3|Synchro|Reactive|Sampling|Triggered by First Input]]></Property>
     <ReadOnlyProperty LongName="AngleErreur_1_1.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
     <ReadOnlyProperty LongName="AngleErreur_1_1.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
@@ -162,14 +162,14 @@
     <Property LongName="Better_Traj_1.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Better_Traj_1.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Better_Traj_1.memorySize" Type="1">30000000</Property>
-    <ReadOnlyProperty LongName="Better_Traj_1.pythonPID" Type="1">12976</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Better_Traj_1.pythonPID" Type="1">14968</ReadOnlyProperty>
     <Property LongName="Better_Traj_1.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Better_Traj_1.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Better_Traj_1.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
     <Property LongName="Better_Traj_1.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[AUTO/]]></Property>
     <Property LongName="Better_Traj_1.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/Nicolas/RTMaps-4.0/python_log/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../RTMaps-4.0/python_log]]></Relative></Property>
     <Property LongName="Better_Traj_1.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="Better_Traj_1.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/Nicolas/Documents/UTAC Local/UTAC S8/gpsPoints_referenceTraj.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../UTAC Local/UTAC S8/gpsPoints_referenceTraj.py]]></Relative></Property>
+    <Property LongName="Better_Traj_1.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/Nicolas/Documents/GitHub/Rtmaps_Autopilot_Project/AMI_Project/python_script - S8/gpsPoints_referenceTraj.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/python_script - S8/gpsPoints_referenceTraj.py]]></Relative></Property>
     <Property LongName="Better_Traj_1.readingPolicy" Type="4"><![CDATA[4|3|Synchro|Reactive|Sampling|Triggered by First Input]]></Property>
     <ReadOnlyProperty LongName="Better_Traj_1.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Better_Traj_1.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
@@ -232,14 +232,14 @@
     <Property LongName="ChgtRepere_1.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="ChgtRepere_1.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="ChgtRepere_1.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="ChgtRepere_1.pythonPID" Type="1">10472</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="ChgtRepere_1.pythonPID" Type="1">3476</ReadOnlyProperty>
     <Property LongName="ChgtRepere_1.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="ChgtRepere_1.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="ChgtRepere_1.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
     <Property LongName="ChgtRepere_1.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[]]></Property>
     <Property LongName="ChgtRepere_1.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/Nicolas/RTMaps-4.0/python_log/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../RTMaps-4.0/python_log]]></Relative></Property>
     <Property LongName="ChgtRepere_1.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="ChgtRepere_1.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/Nicolas/Documents/UTAC Local/UTAC S8/points_ds_repere.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../UTAC Local/UTAC S8/points_ds_repere.py]]></Relative></Property>
+    <Property LongName="ChgtRepere_1.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/Nicolas/Documents/GitHub/Rtmaps_Autopilot_Project/AMI_Project/python_script - S8/points_ds_repere.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/python_script - S8/points_ds_repere.py]]></Relative></Property>
     <Property LongName="ChgtRepere_1.readingPolicy" Type="4"><![CDATA[4|3|Synchro|Reactive|Sampling|Triggered by First Input]]></Property>
     <ReadOnlyProperty LongName="ChgtRepere_1.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
     <ReadOnlyProperty LongName="ChgtRepere_1.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
@@ -562,7 +562,7 @@
     <Property LongName="Image_Processing.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Image_Processing.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Image_Processing.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="Image_Processing.pythonPID" Type="1">6352</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Image_Processing.pythonPID" Type="1">3068</ReadOnlyProperty>
     <Property LongName="Image_Processing.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Image_Processing.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Image_Processing.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -674,7 +674,7 @@
     <Property LongName="Location_Play.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Location_Play.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Location_Play.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="Location_Play.pythonPID" Type="1">2716</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Location_Play.pythonPID" Type="1">14260</ReadOnlyProperty>
     <Property LongName="Location_Play.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Location_Play.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Location_Play.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -684,47 +684,11 @@
     <Property LongName="Location_Play.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/Nicolas/Documents/GitHub/Rtmaps_Autopilot_Project/AMI_Project/python_script/Location_Play_AMI.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/python_script/Location_Play_AMI.py]]></Relative></Property>
     <Property LongName="Location_Play.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
     <ReadOnlyProperty LongName="Location_Play.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="Location_Play.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Location_Play.userSubsection" Type="3" SubType="256"><![CDATA[User Subsection]]></ReadOnlyProperty>
     <ReadOnlyProperty LongName="Location_Play.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
     <Property LongName="Location_Play.threaded" Type="0">true</Property>
     <Property LongName="Location_Play.priority" Type="1">128</Property>
     <Property LongName="Location_Play.autoStart" Type="0">true</Property>
-  </Component>
-  <Component InstanceName="Location_Record" Model="PythonBridge" Version="3.0.3" x="784" y="48" z="0">
-    <Input LongName="Location_Record.in" Name="in">
-      <Property LongName="Location_Record.in.readerType" Type="1">0</Property>
-      <Property LongName="Location_Record.in.subsampling" Type="1">1</Property>
-    </Input>
-    <Output LongName="Location_Record.out" Name="out">
-      <Property LongName="Location_Record.out.subsampling" Type="1">1</Property>
-      <Property LongName="Location_Record.out.fifosize" Type="1">16</Property>
-      <Property LongName="Location_Record.out.periodic" Type="0">false</Property>
-    </Output>
-    <Property LongName="Location_Record.guard_begin" Type="0" SubType="128">true</Property>
-    <Property LongName="Location_Record.internalInputs" Type="3" SubType="128"><![CDATA[in;1==]]></Property>
-    <Property LongName="Location_Record.internalOutputs" Type="3" SubType="128"><![CDATA[out;0==;0]]></Property>
-    <Property LongName="Location_Record.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
-    <ReadOnlyProperty LongName="Location_Record.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
-    <Property LongName="Location_Record.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
-    <Property LongName="Location_Record.logDebug" Type="0">false</Property>
-    <Property LongName="Location_Record.showTracebackInConsole" Type="0">true</Property>
-    <Property LongName="Location_Record.autoReloadSubModules" Type="0">true</Property>
-    <Property LongName="Location_Record.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="Location_Record.pythonPID" Type="1">5604</ReadOnlyProperty>
-    <Property LongName="Location_Record.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
-    <ReadOnlyProperty LongName="Location_Record.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="Location_Record.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
-    <Property LongName="Location_Record.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[]]></Property>
-    <Property LongName="Location_Record.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/Nicolas/RTMaps-4.0/python_log/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../RTMaps-4.0/python_log]]></Relative></Property>
-    <Property LongName="Location_Record.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="Location_Record.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/Nicolas/Documents/GitHub/Rtmaps_Autopilot_Project/AMI_Project/python_script/Location_Record_AMI.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/python_script/Location_Record_AMI.py]]></Relative></Property>
-    <Property LongName="Location_Record.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
-    <ReadOnlyProperty LongName="Location_Record.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="Location_Record.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
-    <ReadOnlyProperty LongName="Location_Record.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
-    <Property LongName="Location_Record.threaded" Type="0">true</Property>
-    <Property LongName="Location_Record.priority" Type="1">128</Property>
-    <Property LongName="Location_Record.autoStart" Type="0">false</Property>
   </Component>
   <Component InstanceName="Longi_speed_1" Model="PythonBridge" Version="3.0.3" x="1248" y="784" z="0">
     <Input LongName="Longi_speed_1.A" Name="A">
@@ -750,14 +714,14 @@
     <Property LongName="Longi_speed_1.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Longi_speed_1.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Longi_speed_1.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="Longi_speed_1.pythonPID" Type="1">13616</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Longi_speed_1.pythonPID" Type="1">12648</ReadOnlyProperty>
     <Property LongName="Longi_speed_1.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Longi_speed_1.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Longi_speed_1.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
     <Property LongName="Longi_speed_1.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[]]></Property>
     <Property LongName="Longi_speed_1.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/Nicolas/RTMaps-4.0/python_log/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../RTMaps-4.0/python_log]]></Relative></Property>
     <Property LongName="Longi_speed_1.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="Longi_speed_1.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/Nicolas/Documents/UTAC Local/UTAC S8/S_Longv2.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../UTAC Local/UTAC S8/S_Longv2.py]]></Relative></Property>
+    <Property LongName="Longi_speed_1.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/Nicolas/Documents/GitHub/Rtmaps_Autopilot_Project/AMI_Project/python_script - S8/S_Longv2.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/python_script - S8/S_Longv2.py]]></Relative></Property>
     <Property LongName="Longi_speed_1.readingPolicy" Type="4"><![CDATA[4|3|Synchro|Reactive|Sampling|Triggered by First Input]]></Property>
     <ReadOnlyProperty LongName="Longi_speed_1.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Longi_speed_1.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
@@ -791,7 +755,7 @@
     <Property LongName="MPC_Controler.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="MPC_Controler.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="MPC_Controler.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="MPC_Controler.pythonPID" Type="1">13628</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="MPC_Controler.pythonPID" Type="1">10212</ReadOnlyProperty>
     <Property LongName="MPC_Controler.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="MPC_Controler.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="MPC_Controler.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -843,14 +807,14 @@
     <Property LongName="Recorder_1.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Recorder_1.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Recorder_1.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="Recorder_1.pythonPID" Type="1">13200</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Recorder_1.pythonPID" Type="1">15380</ReadOnlyProperty>
     <Property LongName="Recorder_1.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Recorder_1.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Recorder_1.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
     <Property LongName="Recorder_1.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[]]></Property>
     <Property LongName="Recorder_1.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/Nicolas/RTMaps-4.0/python_log/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../RTMaps-4.0/python_log]]></Relative></Property>
     <Property LongName="Recorder_1.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="Recorder_1.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/Nicolas/Documents/UTAC Local/UTAC S8/CSV_rec.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../UTAC Local/UTAC S8/CSV_rec.py]]></Relative></Property>
+    <Property LongName="Recorder_1.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/Nicolas/Documents/GitHub/Rtmaps_Autopilot_Project/AMI_Project/python_script - S8/CSV_rec.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/python_script - S8/CSV_rec.py]]></Relative></Property>
     <Property LongName="Recorder_1.readingPolicy" Type="4"><![CDATA[4|3|Synchro|Reactive|Sampling|Triggered by First Input]]></Property>
     <ReadOnlyProperty LongName="Recorder_1.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Recorder_1.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
@@ -921,49 +885,6 @@
     <Property LongName="SocketReceiver_1_1.threaded" Type="0">true</Property>
     <Property LongName="SocketReceiver_1_1.priority" Type="1">128</Property>
     <Property LongName="SocketReceiver_1_1.autoStart" Type="0">false</Property>
-  </Component>
-  <Component InstanceName="State" Model="DataViewer" Version="2.0.3" x="976" y="48" z="0">
-    <Input LongName="State.input_0" Name="input_0">
-      <Property LongName="State.input_0.readerType" Type="1">2</Property>
-      <Property LongName="State.input_0.subsampling" Type="1">1</Property>
-    </Input>
-    <Property LongName="State.begin_guard" Type="0" SubType="128">true</Property>
-    <ReadOnlyProperty LongName="State.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
-    <Property LongName="State.autoDirty" Type="0">true</Property>
-    <Property LongName="State.run" Type="0">true</Property>
-    <Property LongName="State.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
-    <Property LongName="State.moveable" Type="0">true</Property>
-    <Property LongName="State.hidden" Type="0">false</Property>
-    <Property LongName="State.title" Type="3"><![CDATA[]]></Property>
-    <Property LongName="State.x" Type="1">158</Property>
-    <Property LongName="State.y" Type="1">553</Property>
-    <Property LongName="State.width" Type="1">360</Property>
-    <Property LongName="State.height" Type="1">323</Property>
-    <Property LongName="State.end_guard" Type="0" SubType="128">true</Property>
-    <ReadOnlyProperty LongName="State.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="State.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
-    <Property LongName="State.nbInputs" Type="1">1</Property>
-    <Property LongName="State.compactMode" Type="0">false</Property>
-    <Property LongName="State.showInfo" Type="0">true</Property>
-    <Property LongName="State.showData" Type="0">true</Property>
-    <Property LongName="State.showPrettyTimestamp" Type="0">true</Property>
-    <Property LongName="State.float32Format" Type="3"><![CDATA[%9g]]></Property>
-    <Property LongName="State.float64Format" Type="3"><![CDATA[%9g]]></Property>
-    <Property LongName="State.integer8Format" Type="3"><![CDATA[%d]]></Property>
-    <Property LongName="State.integer16Format" Type="3"><![CDATA[%d]]></Property>
-    <Property LongName="State.integer32Format" Type="3"><![CDATA[%I32d]]></Property>
-    <Property LongName="State.integer64Format" Type="3"><![CDATA[%I64d]]></Property>
-    <Property LongName="State.unsignedInteger8Format" Type="3"><![CDATA[%u]]></Property>
-    <Property LongName="State.unsignedInteger16Format" Type="3"><![CDATA[%u]]></Property>
-    <Property LongName="State.unsignedInteger32Format" Type="3"><![CDATA[%I32u]]></Property>
-    <Property LongName="State.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
-    <Property LongName="State.hexDisplay" Type="0">false</Property>
-    <Property LongName="State.internalState" Type="3" SubType="128"><![CDATA[238;112]]></Property>
-    <Property LongName="State.expandedState" Type="3" SubType="128"><![CDATA[0|]]></Property>
-    <ReadOnlyProperty LongName="State.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
-    <Property LongName="State.threaded" Type="0">true</Property>
-    <Property LongName="State.priority" Type="1">128</Property>
-    <Property LongName="State.autoStart" Type="0">false</Property>
   </Component>
   <Component InstanceName="Steer_converter" Model="numbers_converter" Version="1.1.3" x="208" y="424" z="0">
     <Input LongName="Steer_converter.input" Name="input">
@@ -1119,14 +1040,14 @@
     <Property LongName="UTMConverter_1.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="UTMConverter_1.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="UTMConverter_1.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="UTMConverter_1.pythonPID" Type="1">13484</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="UTMConverter_1.pythonPID" Type="1">14888</ReadOnlyProperty>
     <Property LongName="UTMConverter_1.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="UTMConverter_1.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="UTMConverter_1.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
     <Property LongName="UTMConverter_1.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[]]></Property>
     <Property LongName="UTMConverter_1.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/Nicolas/RTMaps-4.0/python_log/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../RTMaps-4.0/python_log]]></Relative></Property>
     <Property LongName="UTMConverter_1.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="UTMConverter_1.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/Nicolas/Documents/UTAC Local/UTAC S8/UTMconversion.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../UTAC Local/UTAC S8/UTMconversion.py]]></Relative></Property>
+    <Property LongName="UTMConverter_1.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/Nicolas/Documents/GitHub/Rtmaps_Autopilot_Project/AMI_Project/python_script - S8/UTMconversion.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/python_script - S8/UTMconversion.py]]></Relative></Property>
     <Property LongName="UTMConverter_1.readingPolicy" Type="4"><![CDATA[4|3|Synchro|Reactive|Sampling|Triggered by First Input]]></Property>
     <ReadOnlyProperty LongName="UTMConverter_1.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
     <ReadOnlyProperty LongName="UTMConverter_1.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
@@ -1310,7 +1231,7 @@
     <Property LongName="Vehicle.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Vehicle.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Vehicle.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="Vehicle.pythonPID" Type="1">14028</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Vehicle.pythonPID" Type="1">15812</ReadOnlyProperty>
     <Property LongName="Vehicle.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Vehicle.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Vehicle.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -1320,7 +1241,7 @@
     <Property LongName="Vehicle.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/Nicolas/Documents/GitHub/Rtmaps_Autopilot_Project/AMI_Project/python_script/Rtmaps_Control_AMI.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/python_script/Rtmaps_Control_AMI.py]]></Relative></Property>
     <Property LongName="Vehicle.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
     <ReadOnlyProperty LongName="Vehicle.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="Vehicle.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Vehicle.userSubsection" Type="3" SubType="256"><![CDATA[User Subsection]]></ReadOnlyProperty>
     <Property LongName="Vehicle.HOST" Type="3"><![CDATA[127.0.0.1]]></Property>
     <Property LongName="Vehicle.PORT" Type="1">2000</Property>
     <Property LongName="Vehicle.WIDTH" Type="1">1280</Property>
@@ -1387,14 +1308,14 @@
     <Property LongName="yawreader_1.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="yawreader_1.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="yawreader_1.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="yawreader_1.pythonPID" Type="1">11720</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="yawreader_1.pythonPID" Type="1">14936</ReadOnlyProperty>
     <Property LongName="yawreader_1.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="yawreader_1.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="yawreader_1.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
     <Property LongName="yawreader_1.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[]]></Property>
     <Property LongName="yawreader_1.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/Nicolas/RTMaps-4.0/python_log/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../RTMaps-4.0/python_log]]></Relative></Property>
     <Property LongName="yawreader_1.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="yawreader_1.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/Nicolas/Documents/UTAC Local/UTAC S8/yawreader.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../UTAC Local/UTAC S8/yawreader.py]]></Relative></Property>
+    <Property LongName="yawreader_1.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/Nicolas/Documents/GitHub/Rtmaps_Autopilot_Project/AMI_Project/python_script - S8/yawreader.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/python_script - S8/yawreader.py]]></Relative></Property>
     <Property LongName="yawreader_1.readingPolicy" Type="4"><![CDATA[4|3|Synchro|Reactive|Sampling|Triggered by First Input]]></Property>
     <ReadOnlyProperty LongName="yawreader_1.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
     <ReadOnlyProperty LongName="yawreader_1.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
@@ -1424,14 +1345,12 @@
   <Connection Output="Vehicle.imageCamera" Input="Image_Processing.in"/>
   <Connection Output="is_auto_pilot.state0" Input="is_auto_pilot_converter.input"/>
   <Connection Output="is_reverse_0.o_float64" Input="is_reverse_converter.input"/>
-  <Connection Output="Vehicle.state" Input="Location_Record.in"/>
   <Connection Output="AngleErreur_1_1.A" Input="Longi_speed_1.A"/>
   <Connection Output="ChgtRepere_1.fin" Input="Longi_speed_1.Stop"/>
   <Connection Output="Vectorizer_1.outputFloat" Input="MPC_Controler.in"/>
   <Connection Output="Vehicle.ptCloud" Input="Offset.input"/>
   <Connection Output="Vehicle.imuLatLongAlt" Input="Recorder_1.in"/>
   <Connection Output="Recording_1.state0" Input="Recorder_1.recording"/>
-  <Connection Output="Location_Record.out" Input="State.input_0"/>
   <Connection Output="Steer_delta.output0" Input="Steer_converter.input"/>
   <Connection Output="Vehicle.rollPitchYaw" Input="switcher_1_1.input_1"/>
   <Connection Output="Recording_1.state0" Input="switcher_1_1.index"/>
@@ -1640,7 +1559,6 @@
     <ConnectionShape InstanceName="JPEGDecompress_15_1.input" color="0"/>
     <ConnectionShape InstanceName="Led_1.input0" color="0"/>
     <ConnectionShape InstanceName="Led_1.input1" color="0"/>
-    <ConnectionShape InstanceName="Location_Record.in" color="0"/>
     <ConnectionShape InstanceName="Longi_speed.A" color="0"/>
     <ConnectionShape InstanceName="Longi_speed.Stop" color="0"/>
     <ConnectionShape InstanceName="Longi_speed_1.A" color="0"/>
@@ -1693,7 +1611,6 @@
     <ConnectionShape InstanceName="smoothing.x_y_array" color="0"/>
     <ConnectionShape InstanceName="SocketSender_2.Vlat" color="0"/>
     <ConnectionShape InstanceName="SocketSender_2.Vlong" color="0"/>
-    <ConnectionShape InstanceName="State.input_0" color="0"/>
     <ConnectionShape InstanceName="Steer_converter.input" color="0"/>
     <ConnectionShape InstanceName="switcher_1_1.index" color="0"/>
     <ConnectionShape InstanceName="switcher_1_1.input_1" color="0"/>

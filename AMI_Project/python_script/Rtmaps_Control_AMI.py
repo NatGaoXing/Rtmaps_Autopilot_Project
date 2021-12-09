@@ -4,6 +4,7 @@ import rtmaps.core as rt
 import rtmaps.reading_policy
 from rtmaps.base_component import BaseComponent
 
+import math
 import glob
 import os
 import sys
@@ -318,7 +319,7 @@ class rtmaps_python(BaseComponent):
         self.outputs["accXYZ"].write(np.array(accx3), ts=timeStampUs)
         self.outputs["gyroXYZ"].write(np.array(gyrox3), ts=timeStampUs)
         self.outputs["imuLatLongAlt"].write(np.array(imu3), ts=timeStampUs)
-        self.outputs["rollPitchYaw"].write(np.array([roll, pitch, (-yaw)]), ts=timeStampUs)
+        self.outputs["rollPitchYaw"].write(np.array([roll, pitch, (180+math.degrees(math.degrees(-yaw)))]), ts=timeStampUs)
 
     def spawnVehicles(self, number_of_vehicles):
         self.traffic_manager = self.client.get_trafficmanager(int(self.properties["TM_PORT"].data))

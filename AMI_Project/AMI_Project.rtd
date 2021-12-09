@@ -63,7 +63,7 @@
     <Property LongName="A.min0" Type="2">0</Property>
     <Property LongName="A.max0" Type="2">1</Property>
     <Property LongName="A.mode0" Type="4"><![CDATA[2|0|Continous|Step]]></Property>
-    <Property LongName="A.value0" Type="2">0.16</Property>
+    <Property LongName="A.value0" Type="2">0.24</Property>
     <Property LongName="A.samplingTime0" Type="1" SubType="1">50000</Property>
     <Property LongName="A.step0" Type="1">1</Property>
     <Property LongName="A.orientation1" Type="4"><![CDATA[2|1|HORIZONTAL|VERTICAL]]></Property>
@@ -111,7 +111,7 @@
     <Property LongName="AngleErreur_1_1.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="AngleErreur_1_1.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="AngleErreur_1_1.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="AngleErreur_1_1.pythonPID" Type="1">14236</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="AngleErreur_1_1.pythonPID" Type="1">3016</ReadOnlyProperty>
     <Property LongName="AngleErreur_1_1.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="AngleErreur_1_1.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="AngleErreur_1_1.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -161,8 +161,8 @@
     <Property LongName="Better_Traj_1.logDebug" Type="0">false</Property>
     <Property LongName="Better_Traj_1.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Better_Traj_1.autoReloadSubModules" Type="0">true</Property>
-    <Property LongName="Better_Traj_1.memorySize" Type="1">30000000</Property>
-    <ReadOnlyProperty LongName="Better_Traj_1.pythonPID" Type="1">14968</ReadOnlyProperty>
+    <Property LongName="Better_Traj_1.memorySize" Type="1">90000000</Property>
+    <ReadOnlyProperty LongName="Better_Traj_1.pythonPID" Type="1">14040</ReadOnlyProperty>
     <Property LongName="Better_Traj_1.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Better_Traj_1.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Better_Traj_1.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -232,7 +232,7 @@
     <Property LongName="ChgtRepere_1.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="ChgtRepere_1.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="ChgtRepere_1.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="ChgtRepere_1.pythonPID" Type="1">3476</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="ChgtRepere_1.pythonPID" Type="1">15852</ReadOnlyProperty>
     <Property LongName="ChgtRepere_1.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="ChgtRepere_1.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="ChgtRepere_1.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -265,8 +265,8 @@
     <Property LongName="Command.moveable" Type="0">true</Property>
     <Property LongName="Command.hidden" Type="0">false</Property>
     <Property LongName="Command.title" Type="3"><![CDATA[]]></Property>
-    <Property LongName="Command.x" Type="1">529</Property>
-    <Property LongName="Command.y" Type="1">635</Property>
+    <Property LongName="Command.x" Type="1">548</Property>
+    <Property LongName="Command.y" Type="1">598</Property>
     <Property LongName="Command.width" Type="1">397</Property>
     <Property LongName="Command.height" Type="1">326</Property>
     <Property LongName="Command.end_guard" Type="0" SubType="128">true</Property>
@@ -288,8 +288,8 @@
     <Property LongName="Command.unsignedInteger32Format" Type="3"><![CDATA[%I32u]]></Property>
     <Property LongName="Command.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
     <Property LongName="Command.hexDisplay" Type="0">false</Property>
-    <Property LongName="Command.internalState" Type="3" SubType="128"><![CDATA[238;128]]></Property>
-    <Property LongName="Command.expandedState" Type="3" SubType="128"><![CDATA[1|MPC_Controler.a;0|Info:MPC_Controler.a;1|Data:MPC_Controler.a;1|MPC_Controler.delta;0|Info:MPC_Controler.delta;1|Data:MPC_Controler.delta]]></Property>
+    <Property LongName="Command.internalState" Type="3" SubType="128"><![CDATA[238;149]]></Property>
+    <Property LongName="Command.expandedState" Type="3" SubType="128"><![CDATA[0|;0|]]></Property>
     <ReadOnlyProperty LongName="Command.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
     <Property LongName="Command.threaded" Type="0">true</Property>
     <Property LongName="Command.priority" Type="1">128</Property>
@@ -337,8 +337,8 @@
     <Property LongName="DataViewer_1.moveable" Type="0">true</Property>
     <Property LongName="DataViewer_1.hidden" Type="0">false</Property>
     <Property LongName="DataViewer_1.title" Type="3"><![CDATA[]]></Property>
-    <Property LongName="DataViewer_1.x" Type="1">667</Property>
-    <Property LongName="DataViewer_1.y" Type="1">118</Property>
+    <Property LongName="DataViewer_1.x" Type="1">866</Property>
+    <Property LongName="DataViewer_1.y" Type="1">154</Property>
     <Property LongName="DataViewer_1.width" Type="1">315</Property>
     <Property LongName="DataViewer_1.height" Type="1">240</Property>
     <Property LongName="DataViewer_1.end_guard" Type="0" SubType="128">true</Property>
@@ -366,6 +366,100 @@
     <Property LongName="DataViewer_1.threaded" Type="0">true</Property>
     <Property LongName="DataViewer_1.priority" Type="1">128</Property>
     <Property LongName="DataViewer_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="DataViewer_2" Model="DataViewer" Version="2.0.3" x="1752" y="80" z="0">
+    <Input LongName="DataViewer_2.input_0" Name="input_0">
+      <Property LongName="DataViewer_2.input_0.readerType" Type="1">2</Property>
+      <Property LongName="DataViewer_2.input_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_2.input_1" Name="input_1">
+      <Property LongName="DataViewer_2.input_1.readerType" Type="1">2</Property>
+      <Property LongName="DataViewer_2.input_1.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="DataViewer_2.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_2.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_2.autoDirty" Type="0">true</Property>
+    <Property LongName="DataViewer_2.run" Type="0">true</Property>
+    <Property LongName="DataViewer_2.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="DataViewer_2.moveable" Type="0">true</Property>
+    <Property LongName="DataViewer_2.hidden" Type="0">false</Property>
+    <Property LongName="DataViewer_2.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="DataViewer_2.x" Type="1">1189</Property>
+    <Property LongName="DataViewer_2.y" Type="1">11</Property>
+    <Property LongName="DataViewer_2.width" Type="1">315</Property>
+    <Property LongName="DataViewer_2.height" Type="1">240</Property>
+    <Property LongName="DataViewer_2.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_2.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="DataViewer_2.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_2.nbInputs" Type="1">2</Property>
+    <Property LongName="DataViewer_2.compactMode" Type="0">false</Property>
+    <Property LongName="DataViewer_2.showInfo" Type="0">true</Property>
+    <Property LongName="DataViewer_2.showData" Type="0">true</Property>
+    <Property LongName="DataViewer_2.showPrettyTimestamp" Type="0">true</Property>
+    <Property LongName="DataViewer_2.float32Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_2.float64Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_2.integer8Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_2.integer16Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_2.integer32Format" Type="3"><![CDATA[%I32d]]></Property>
+    <Property LongName="DataViewer_2.integer64Format" Type="3"><![CDATA[%I64d]]></Property>
+    <Property LongName="DataViewer_2.unsignedInteger8Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_2.unsignedInteger16Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_2.unsignedInteger32Format" Type="3"><![CDATA[%I32u]]></Property>
+    <Property LongName="DataViewer_2.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
+    <Property LongName="DataViewer_2.hexDisplay" Type="0">false</Property>
+    <Property LongName="DataViewer_2.internalState" Type="3" SubType="128"><![CDATA[100;184]]></Property>
+    <Property LongName="DataViewer_2.expandedState" Type="3" SubType="128"><![CDATA[1|Player_1.stdBin_Ixblue.position_f64_LatitudeDeg_LongitudeDeg_AltitudeRef_AltitudeM;0|Info:Player_1.stdBin_Ixblue.position_f64_LatitudeDeg_LongitudeDeg_AltitudeRef_AltitudeM;1|Data:Player_1.stdBin_Ixblue.position_f64_LatitudeDeg_LongitudeDeg_AltitudeRef_AltitudeM;1|Player_1.stdBin_Ixblue.attitudeHeading_f64_RollDeg_PitchDeg_HeadingDeg;0|Info:Player_1.stdBin_Ixblue.attitudeHeading_f64_RollDeg_PitchDeg_HeadingDeg;1|Data:Player_1.stdBin_Ixblue.attitudeHeading_f64_RollDeg_PitchDeg_HeadingDeg]]></Property>
+    <ReadOnlyProperty LongName="DataViewer_2.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="DataViewer_2.threaded" Type="0">true</Property>
+    <Property LongName="DataViewer_2.priority" Type="1">128</Property>
+    <Property LongName="DataViewer_2.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="DataViewer_2_1" Model="DataViewer" Version="2.0.3" x="888" y="72" z="0">
+    <Input LongName="DataViewer_2_1.input_0" Name="input_0">
+      <Property LongName="DataViewer_2_1.input_0.readerType" Type="1">2</Property>
+      <Property LongName="DataViewer_2_1.input_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_2_1.input_1" Name="input_1">
+      <Property LongName="DataViewer_2_1.input_1.readerType" Type="1">2</Property>
+      <Property LongName="DataViewer_2_1.input_1.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="DataViewer_2_1.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_2_1.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_2_1.autoDirty" Type="0">true</Property>
+    <Property LongName="DataViewer_2_1.run" Type="0">true</Property>
+    <Property LongName="DataViewer_2_1.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="DataViewer_2_1.moveable" Type="0">true</Property>
+    <Property LongName="DataViewer_2_1.hidden" Type="0">false</Property>
+    <Property LongName="DataViewer_2_1.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="DataViewer_2_1.x" Type="1">854</Property>
+    <Property LongName="DataViewer_2_1.y" Type="1">412</Property>
+    <Property LongName="DataViewer_2_1.width" Type="1">315</Property>
+    <Property LongName="DataViewer_2_1.height" Type="1">240</Property>
+    <Property LongName="DataViewer_2_1.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_2_1.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="DataViewer_2_1.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_2_1.nbInputs" Type="1">2</Property>
+    <Property LongName="DataViewer_2_1.compactMode" Type="0">false</Property>
+    <Property LongName="DataViewer_2_1.showInfo" Type="0">true</Property>
+    <Property LongName="DataViewer_2_1.showData" Type="0">true</Property>
+    <Property LongName="DataViewer_2_1.showPrettyTimestamp" Type="0">true</Property>
+    <Property LongName="DataViewer_2_1.float32Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_2_1.float64Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_2_1.integer8Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_2_1.integer16Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_2_1.integer32Format" Type="3"><![CDATA[%I32d]]></Property>
+    <Property LongName="DataViewer_2_1.integer64Format" Type="3"><![CDATA[%I64d]]></Property>
+    <Property LongName="DataViewer_2_1.unsignedInteger8Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_2_1.unsignedInteger16Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_2_1.unsignedInteger32Format" Type="3"><![CDATA[%I32u]]></Property>
+    <Property LongName="DataViewer_2_1.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
+    <Property LongName="DataViewer_2_1.hexDisplay" Type="0">false</Property>
+    <Property LongName="DataViewer_2_1.internalState" Type="3" SubType="128"><![CDATA[100;205]]></Property>
+    <Property LongName="DataViewer_2_1.expandedState" Type="3" SubType="128"><![CDATA[0|;0|]]></Property>
+    <ReadOnlyProperty LongName="DataViewer_2_1.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="DataViewer_2_1.threaded" Type="0">true</Property>
+    <Property LongName="DataViewer_2_1.priority" Type="1">128</Property>
+    <Property LongName="DataViewer_2_1.autoStart" Type="0">true</Property>
   </Component>
   <Component InstanceName="Front_Camera" Model="ImageViewer" Version="1.23.2" x="984" y="328" z="0">
     <Input LongName="Front_Camera.input" Name="input">
@@ -482,7 +576,7 @@
 0.0 0.0 1.0 0.0
 0.0 0.0 0.0 1.0
 ]]></Property>
-    <Property LongName="GL2_3D_Viewer_1_1.object_3_file" Type="3" SubType="80"><![CDATA[C:\Users\Nicolas\Documents\GitHub\Rtmaps_Autopilot_Project\AMI_Project\sansvitre.xyzrgb]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/sansvitre.xyzrgb]]></Relative></Property>
+    <Property LongName="GL2_3D_Viewer_1_1.object_3_file" Type="3" SubType="80"><![CDATA[C:/Users/Nicolas/Documents/GitHub/Rtmaps_Autopilot_Project/AMI_Project/sansvitre.xyzrgb]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/sansvitre.xyzrgb]]></Relative></Property>
     <Property LongName="GL2_3D_Viewer_1_1.object_3_size" Type="2">1</Property>
     <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1.object_3_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1.objects_subsection_end" Type="0" SubType="512">true</ReadOnlyProperty>
@@ -518,8 +612,8 @@
     <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1.viewport_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="GL2_3D_Viewer_1_1.window_subsection_begin" Type="3" SubType="256"><![CDATA[Window]]></ReadOnlyProperty>
     <Property LongName="GL2_3D_Viewer_1_1.title" Type="3"><![CDATA[]]></Property>
-    <Property LongName="GL2_3D_Viewer_1_1.left" Type="1">164</Property>
-    <Property LongName="GL2_3D_Viewer_1_1.top" Type="1">216</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.left" Type="1">103</Property>
+    <Property LongName="GL2_3D_Viewer_1_1.top" Type="1">192</Property>
     <Property LongName="GL2_3D_Viewer_1_1.width" Type="1">744</Property>
     <Property LongName="GL2_3D_Viewer_1_1.height" Type="1">557</Property>
     <Property LongName="GL2_3D_Viewer_1_1.windowBackend" Type="4"><![CDATA[1|0|Win32]]></Property>
@@ -562,7 +656,7 @@
     <Property LongName="Image_Processing.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Image_Processing.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Image_Processing.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="Image_Processing.pythonPID" Type="1">3068</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Image_Processing.pythonPID" Type="1">4188</ReadOnlyProperty>
     <Property LongName="Image_Processing.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Image_Processing.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Image_Processing.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -674,7 +768,7 @@
     <Property LongName="Location_Play.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Location_Play.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Location_Play.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="Location_Play.pythonPID" Type="1">14260</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Location_Play.pythonPID" Type="1">16496</ReadOnlyProperty>
     <Property LongName="Location_Play.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Location_Play.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Location_Play.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -714,7 +808,7 @@
     <Property LongName="Longi_speed_1.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Longi_speed_1.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Longi_speed_1.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="Longi_speed_1.pythonPID" Type="1">12648</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Longi_speed_1.pythonPID" Type="1">6016</ReadOnlyProperty>
     <Property LongName="Longi_speed_1.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Longi_speed_1.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Longi_speed_1.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -755,7 +849,7 @@
     <Property LongName="MPC_Controler.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="MPC_Controler.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="MPC_Controler.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="MPC_Controler.pythonPID" Type="1">10212</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="MPC_Controler.pythonPID" Type="1">15508</ReadOnlyProperty>
     <Property LongName="MPC_Controler.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="MPC_Controler.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="MPC_Controler.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -788,6 +882,215 @@
     <Property LongName="Offset.priority" Type="1">128</Property>
     <Property LongName="Offset.autoStart" Type="0">true</Property>
   </Component>
+  <Component InstanceName="Player_1" Model="Player" Version="2.15.0" x="1232" y="-88" z="0">
+    <Output LongName="Player_1.CANDecoder_1.statusAmiEtendu_handBrake" Name="CANDecoder_1.statusAmiEtendu_handBrake">
+      <Property LongName="Player_1.CANDecoder_1.statusAmiEtendu_handBrake.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.CANDecoder_1.statusAmiEtendu_handBrake.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.CANDecoder_1.statusAmiEtendu_handBrake.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.CANDecoder_1.StatusAmi_modeReverse0_Neutral1_Forward2" Name="CANDecoder_1.StatusAmi_modeReverse0_Neutral1_Forward2">
+      <Property LongName="Player_1.CANDecoder_1.StatusAmi_modeReverse0_Neutral1_Forward2.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.CANDecoder_1.StatusAmi_modeReverse0_Neutral1_Forward2.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.CANDecoder_1.StatusAmi_modeReverse0_Neutral1_Forward2.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.CANDecoder_1.StatusAmi_speedKmByH" Name="CANDecoder_1.StatusAmi_speedKmByH">
+      <Property LongName="Player_1.CANDecoder_1.StatusAmi_speedKmByH.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.CANDecoder_1.StatusAmi_speedKmByH.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.CANDecoder_1.StatusAmi_speedKmByH.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.CANDecoder_Continental.CLU_ID1_TEMPERATURE" Name="CANDecoder_Continental.CLU_ID1_TEMPERATURE">
+      <Property LongName="Player_1.CANDecoder_Continental.CLU_ID1_TEMPERATURE.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.CANDecoder_Continental.CLU_ID1_TEMPERATURE.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.CANDecoder_Continental.CLU_ID1_TEMPERATURE.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.stdBin_Ixblue.header_i64_navigationDataValidityTime100us" Name="stdBin_Ixblue.header_i64_navigationDataValidityTime100us">
+      <Property LongName="Player_1.stdBin_Ixblue.header_i64_navigationDataValidityTime100us.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.stdBin_Ixblue.header_i64_navigationDataValidityTime100us.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.stdBin_Ixblue.header_i64_navigationDataValidityTime100us.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.stdBin_Ixblue.position_f64_LatitudeDeg_LongitudeDeg_AltitudeRef_AltitudeM" Name="stdBin_Ixblue.position_f64_LatitudeDeg_LongitudeDeg_AltitudeRef_AltitudeM">
+      <Property LongName="Player_1.stdBin_Ixblue.position_f64_LatitudeDeg_LongitudeDeg_AltitudeRef_AltitudeM.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.stdBin_Ixblue.position_f64_LatitudeDeg_LongitudeDeg_AltitudeRef_AltitudeM.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.stdBin_Ixblue.position_f64_LatitudeDeg_LongitudeDeg_AltitudeRef_AltitudeM.periodic" Type="0">false</Property>
+      <Property LongName="Player_1.stdBin_Ixblue.position_f64_LatitudeDeg_LongitudeDeg_AltitudeRef_AltitudeM.replayPath" Type="3" SubType="96"><![CDATA[]]></Property>
+      <Property LongName="Player_1.stdBin_Ixblue.position_f64_LatitudeDeg_LongitudeDeg_AltitudeRef_AltitudeM.fastReplayPath" Type="3" SubType="96"><![CDATA[]]></Property>
+      <Property LongName="Player_1.stdBin_Ixblue.position_f64_LatitudeDeg_LongitudeDeg_AltitudeRef_AltitudeM.replayMode" Type="4"><![CDATA[3|0|Normal|Immediate|Timestamp]]></Property>
+      <Property LongName="Player_1.stdBin_Ixblue.position_f64_LatitudeDeg_LongitudeDeg_AltitudeRef_AltitudeM.autopause" Type="0">false</Property>
+      <Property LongName="Player_1.stdBin_Ixblue.position_f64_LatitudeDeg_LongitudeDeg_AltitudeRef_AltitudeM.threaded" Type="0">false</Property>
+      <Property LongName="Player_1.stdBin_Ixblue.position_f64_LatitudeDeg_LongitudeDeg_AltitudeRef_AltitudeM.priority" Type="1">128</Property>
+      <Property LongName="Player_1.stdBin_Ixblue.position_f64_LatitudeDeg_LongitudeDeg_AltitudeRef_AltitudeM.replayThreadPriority" Type="1">128</Property>
+    </Output>
+    <Output LongName="Player_1.stdBin_Ixblue.positionDeviation_f64_NorthStddevM_EastStddevM_NorthEastCorr_AltitudeStddevM" Name="stdBin_Ixblue.positionDeviation_f64_NorthStddevM_EastStddevM_NorthEastCorr_AltitudeStddevM">
+      <Property LongName="Player_1.stdBin_Ixblue.positionDeviation_f64_NorthStddevM_EastStddevM_NorthEastCorr_AltitudeStddevM.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.stdBin_Ixblue.positionDeviation_f64_NorthStddevM_EastStddevM_NorthEastCorr_AltitudeStddevM.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.stdBin_Ixblue.positionDeviation_f64_NorthStddevM_EastStddevM_NorthEastCorr_AltitudeStddevM.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.stdBin_Ixblue.attitudeHeading_f64_RollDeg_PitchDeg_HeadingDeg" Name="stdBin_Ixblue.attitudeHeading_f64_RollDeg_PitchDeg_HeadingDeg">
+      <Property LongName="Player_1.stdBin_Ixblue.attitudeHeading_f64_RollDeg_PitchDeg_HeadingDeg.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.stdBin_Ixblue.attitudeHeading_f64_RollDeg_PitchDeg_HeadingDeg.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.stdBin_Ixblue.attitudeHeading_f64_RollDeg_PitchDeg_HeadingDeg.periodic" Type="0">false</Property>
+      <Property LongName="Player_1.stdBin_Ixblue.attitudeHeading_f64_RollDeg_PitchDeg_HeadingDeg.replayPath" Type="3" SubType="96"><![CDATA[]]></Property>
+      <Property LongName="Player_1.stdBin_Ixblue.attitudeHeading_f64_RollDeg_PitchDeg_HeadingDeg.fastReplayPath" Type="3" SubType="96"><![CDATA[]]></Property>
+      <Property LongName="Player_1.stdBin_Ixblue.attitudeHeading_f64_RollDeg_PitchDeg_HeadingDeg.replayMode" Type="4"><![CDATA[3|0|Normal|Immediate|Timestamp]]></Property>
+      <Property LongName="Player_1.stdBin_Ixblue.attitudeHeading_f64_RollDeg_PitchDeg_HeadingDeg.autopause" Type="0">false</Property>
+      <Property LongName="Player_1.stdBin_Ixblue.attitudeHeading_f64_RollDeg_PitchDeg_HeadingDeg.threaded" Type="0">false</Property>
+      <Property LongName="Player_1.stdBin_Ixblue.attitudeHeading_f64_RollDeg_PitchDeg_HeadingDeg.priority" Type="1">128</Property>
+      <Property LongName="Player_1.stdBin_Ixblue.attitudeHeading_f64_RollDeg_PitchDeg_HeadingDeg.replayThreadPriority" Type="1">128</Property>
+    </Output>
+    <Output LongName="Player_1.stdBin_Ixblue.attitudeHeadingDeviation_f64_RollStdDevDeg_PitchStdDevDeg_HeadingStdDevDeg" Name="stdBin_Ixblue.attitudeHeadingDeviation_f64_RollStdDevDeg_PitchStdDevDeg_HeadingStdDevDeg">
+      <Property LongName="Player_1.stdBin_Ixblue.attitudeHeadingDeviation_f64_RollStdDevDeg_PitchStdDevDeg_HeadingStdDevDeg.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.stdBin_Ixblue.attitudeHeadingDeviation_f64_RollStdDevDeg_PitchStdDevDeg_HeadingStdDevDeg.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.stdBin_Ixblue.attitudeHeadingDeviation_f64_RollStdDevDeg_PitchStdDevDeg_HeadingStdDevDeg.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.stdBin_Ixblue.headingRollPitchRate_f64_RollRate_PitchRate_HeadingRate" Name="stdBin_Ixblue.headingRollPitchRate_f64_RollRate_PitchRate_HeadingRate">
+      <Property LongName="Player_1.stdBin_Ixblue.headingRollPitchRate_f64_RollRate_PitchRate_HeadingRate.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.stdBin_Ixblue.headingRollPitchRate_f64_RollRate_PitchRate_HeadingRate.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.stdBin_Ixblue.headingRollPitchRate_f64_RollRate_PitchRate_HeadingRate.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.stdBin_Ixblue.utc_i64_ValidityTime100us_Source" Name="stdBin_Ixblue.utc_i64_ValidityTime100us_Source">
+      <Property LongName="Player_1.stdBin_Ixblue.utc_i64_ValidityTime100us_Source.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.stdBin_Ixblue.utc_i64_ValidityTime100us_Source.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.stdBin_Ixblue.utc_i64_ValidityTime100us_Source.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.Calc_2enableControlVOlant.outputFloat" Name="Calc_2enableControlVOlant.outputFloat">
+      <Property LongName="Player_1.Calc_2enableControlVOlant.outputFloat.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.Calc_2enableControlVOlant.outputFloat.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.Calc_2enableControlVOlant.outputFloat.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.switcherSelectionVOlantOuJoystickCommandeVolant.output" Name="switcherSelectionVOlantOuJoystickCommandeVolant.output">
+      <Property LongName="Player_1.switcherSelectionVOlantOuJoystickCommandeVolant.output.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.switcherSelectionVOlantOuJoystickCommandeVolant.output.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.switcherSelectionVOlantOuJoystickCommandeVolant.output.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.encoderAbsDecoder_1.position" Name="encoderAbsDecoder_1.position">
+      <Property LongName="Player_1.encoderAbsDecoder_1.position.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.encoderAbsDecoder_1.position.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.encoderAbsDecoder_1.position.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.encoderAbsDecoder_1.encoderTS" Name="encoderAbsDecoder_1.encoderTS">
+      <Property LongName="Player_1.encoderAbsDecoder_1.encoderTS.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.encoderAbsDecoder_1.encoderTS.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.encoderAbsDecoder_1.encoderTS.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.CANDecoder_Continental.CLU_ID3_PITCH_RATE" Name="CANDecoder_Continental.CLU_ID3_PITCH_RATE">
+      <Property LongName="Player_1.CANDecoder_Continental.CLU_ID3_PITCH_RATE.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.CANDecoder_Continental.CLU_ID3_PITCH_RATE.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.CANDecoder_Continental.CLU_ID3_PITCH_RATE.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.CANDecoder_Continental.CLU_ID3_VERT_ACC_QUAL" Name="CANDecoder_Continental.CLU_ID3_VERT_ACC_QUAL">
+      <Property LongName="Player_1.CANDecoder_Continental.CLU_ID3_VERT_ACC_QUAL.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.CANDecoder_Continental.CLU_ID3_VERT_ACC_QUAL.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.CANDecoder_Continental.CLU_ID3_VERT_ACC_QUAL.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.CANDecoder_Continental.CLU_ID2_LONG_ACC" Name="CANDecoder_Continental.CLU_ID2_LONG_ACC">
+      <Property LongName="Player_1.CANDecoder_Continental.CLU_ID2_LONG_ACC.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.CANDecoder_Continental.CLU_ID2_LONG_ACC.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.CANDecoder_Continental.CLU_ID2_LONG_ACC.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.CANDecoder_Continental.CLU_ID2_ROLL_RATE" Name="CANDecoder_Continental.CLU_ID2_ROLL_RATE">
+      <Property LongName="Player_1.CANDecoder_Continental.CLU_ID2_ROLL_RATE.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.CANDecoder_Continental.CLU_ID2_ROLL_RATE.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.CANDecoder_Continental.CLU_ID2_ROLL_RATE.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.CANDecoder_Continental.CLU_ID1_LAT_ACC" Name="CANDecoder_Continental.CLU_ID1_LAT_ACC">
+      <Property LongName="Player_1.CANDecoder_Continental.CLU_ID1_LAT_ACC.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.CANDecoder_Continental.CLU_ID1_LAT_ACC.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.CANDecoder_Continental.CLU_ID1_LAT_ACC.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.CANDecoder_Continental.CLU_ID1_YAW_RATE" Name="CANDecoder_Continental.CLU_ID1_YAW_RATE">
+      <Property LongName="Player_1.CANDecoder_Continental.CLU_ID1_YAW_RATE.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.CANDecoder_Continental.CLU_ID1_YAW_RATE.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.CANDecoder_Continental.CLU_ID1_YAW_RATE.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.Calc_2enableModeTrajFollowing.outputFloat" Name="Calc_2enableModeTrajFollowing.outputFloat">
+      <Property LongName="Player_1.Calc_2enableModeTrajFollowing.outputFloat.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.Calc_2enableModeTrajFollowing.outputFloat.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.Calc_2enableModeTrajFollowing.outputFloat.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.PythonBridge_1.modeMomoAuto" Name="PythonBridge_1.modeMomoAuto">
+      <Property LongName="Player_1.PythonBridge_1.modeMomoAuto.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.PythonBridge_1.modeMomoAuto.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.PythonBridge_1.modeMomoAuto.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.rtMaspDrivePackageRead_1.position" Name="rtMaspDrivePackageRead_1.position">
+      <Property LongName="Player_1.rtMaspDrivePackageRead_1.position.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.rtMaspDrivePackageRead_1.position.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.rtMaspDrivePackageRead_1.position.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.rtMaspDrivePackageRead_1.speed" Name="rtMaspDrivePackageRead_1.speed">
+      <Property LongName="Player_1.rtMaspDrivePackageRead_1.speed.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.rtMaspDrivePackageRead_1.speed.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.rtMaspDrivePackageRead_1.speed.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.rtMaspDrivePackageRead_1.torque" Name="rtMaspDrivePackageRead_1.torque">
+      <Property LongName="Player_1.rtMaspDrivePackageRead_1.torque.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.rtMaspDrivePackageRead_1.torque.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.rtMaspDrivePackageRead_1.torque.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.can2odo_1_1_2.ovCurveAngleDegByMeter" Name="can2odo_1_1_2.ovCurveAngleDegByMeter">
+      <Property LongName="Player_1.can2odo_1_1_2.ovCurveAngleDegByMeter.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.can2odo_1_1_2.ovCurveAngleDegByMeter.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.can2odo_1_1_2.ovCurveAngleDegByMeter.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.encoderAbsDecoder_1.positionEnDegree" Name="encoderAbsDecoder_1.positionEnDegree">
+      <Property LongName="Player_1.encoderAbsDecoder_1.positionEnDegree.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.encoderAbsDecoder_1.positionEnDegree.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.encoderAbsDecoder_1.positionEnDegree.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.PythonBridgeCOntrolVolant_1_1.oVolantMode" Name="PythonBridgeCOntrolVolant_1_1.oVolantMode">
+      <Property LongName="Player_1.PythonBridgeCOntrolVolant_1_1.oVolantMode.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.PythonBridgeCOntrolVolant_1_1.oVolantMode.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.PythonBridgeCOntrolVolant_1_1.oVolantMode.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.PythonBridgeCOntrolVolant_1_1.oVolantPosition" Name="PythonBridgeCOntrolVolant_1_1.oVolantPosition">
+      <Property LongName="Player_1.PythonBridgeCOntrolVolant_1_1.oVolantPosition.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.PythonBridgeCOntrolVolant_1_1.oVolantPosition.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.PythonBridgeCOntrolVolant_1_1.oVolantPosition.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.PythonBridgeCOntrolVolant_1_1.oVolantTorque" Name="PythonBridgeCOntrolVolant_1_1.oVolantTorque">
+      <Property LongName="Player_1.PythonBridgeCOntrolVolant_1_1.oVolantTorque.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.PythonBridgeCOntrolVolant_1_1.oVolantTorque.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.PythonBridgeCOntrolVolant_1_1.oVolantTorque.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.PythonBridgeCOntrolVolant_1_1.ovolantUnderControlStatus" Name="PythonBridgeCOntrolVolant_1_1.ovolantUnderControlStatus">
+      <Property LongName="Player_1.PythonBridgeCOntrolVolant_1_1.ovolantUnderControlStatus.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.PythonBridgeCOntrolVolant_1_1.ovolantUnderControlStatus.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.PythonBridgeCOntrolVolant_1_1.ovolantUnderControlStatus.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.PythonBridge_1.outVolantDegByM" Name="PythonBridge_1.outVolantDegByM">
+      <Property LongName="Player_1.PythonBridge_1.outVolantDegByM.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.PythonBridge_1.outVolantDegByM.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.PythonBridge_1.outVolantDegByM.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.PythonBridge_PIDLateralCurvature.outDegByMWanted" Name="PythonBridge_PIDLateralCurvature.outDegByMWanted">
+      <Property LongName="Player_1.PythonBridge_PIDLateralCurvature.outDegByMWanted.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.PythonBridge_PIDLateralCurvature.outDegByMWanted.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.PythonBridge_PIDLateralCurvature.outDegByMWanted.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.PythonBridge_PIDLateralCurvature.outErrorDegByM" Name="PythonBridge_PIDLateralCurvature.outErrorDegByM">
+      <Property LongName="Player_1.PythonBridge_PIDLateralCurvature.outErrorDegByM.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.PythonBridge_PIDLateralCurvature.outErrorDegByM.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.PythonBridge_PIDLateralCurvature.outErrorDegByM.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Player_1.file" Type="3" SubType="80"><![CDATA[C:/Users/Nicolas/Documents/UTAC Local/2021_12_08/20211208_154159_RecFile_ProcessedRetour/RecFile_Processed_20211208_154159.rec]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../UTAC Local/2021_12_08/20211208_154159_RecFile_ProcessedRetour/RecFile_Processed_20211208_154159.rec]]></Relative></Property>
+    <Property LongName="Player_1.offset" Type="1">0</Property>
+    <Property LongName="Player_1.beginning" Type="1">0</Property>
+    <Property LongName="Player_1.end" Type="1">0</Property>
+    <Property LongName="Player_1.timelag" Type="1">100000</Property>
+    <Property LongName="Player_1.update" Type="0">true</Property>
+    <ReadOnlyProperty LongName="Player_1.replayPath" Type="3"><![CDATA[C:/Users/Nicolas/Documents/UTAC Local/2021_12_08/20211208_154159_RecFile_ProcessedRetour/]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.comments" Type="3"><![CDATA[]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.ahead" Type="1">163630</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.percentage" Type="1">0</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.time" Type="1">0</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.first" Type="1">809961</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.last" Type="1">180495248</ReadOnlyProperty>
+    <Property LongName="Player_1.serverThreadPriority" Type="1">200</Property>
+    <Property LongName="Player_1.mainClientThreadPriority" Type="1">200</Property>
+    <Property LongName="Player_1.threaded" Type="0">true</Property>
+    <Property LongName="Player_1.priority" Type="1">200</Property>
+    <Property LongName="Player_1.autoStart" Type="0">true</Property>
+  </Component>
   <Component InstanceName="Recorder_1" Model="PythonBridge" Version="3.0.3" x="824" y="144" z="0">
     <Input LongName="Recorder_1.in" Name="in">
       <Property LongName="Recorder_1.in.readerType" Type="1">0</Property>
@@ -807,7 +1110,7 @@
     <Property LongName="Recorder_1.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Recorder_1.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Recorder_1.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="Recorder_1.pythonPID" Type="1">15380</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Recorder_1.pythonPID" Type="1">17132</ReadOnlyProperty>
     <Property LongName="Recorder_1.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Recorder_1.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Recorder_1.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -886,7 +1189,7 @@
     <Property LongName="SocketReceiver_1_1.priority" Type="1">128</Property>
     <Property LongName="SocketReceiver_1_1.autoStart" Type="0">false</Property>
   </Component>
-  <Component InstanceName="Steer_converter" Model="numbers_converter" Version="1.1.3" x="208" y="424" z="0">
+  <Component InstanceName="Steer_converter" Model="numbers_converter" Version="1.1.3" x="208" y="416" z="0">
     <Input LongName="Steer_converter.input" Name="input">
       <Property LongName="Steer_converter.input.readerType" Type="1">0</Property>
       <Property LongName="Steer_converter.input.subsampling" Type="1">1</Property>
@@ -994,7 +1297,7 @@
       <Property LongName="switcher_1_1.output.periodic" Type="0">false</Property>
     </Output>
     <Property LongName="switcher_1_1.nb_channels_in" Type="1">2</Property>
-    <Property LongName="switcher_1_1.source_channel_index" Type="4"><![CDATA[2|1|input_1|input_2]]></Property>
+    <Property LongName="switcher_1_1.source_channel_index" Type="4"><![CDATA[2|0|input_1|input_2]]></Property>
     <Property LongName="switcher_1_1.at_switch" Type="4"><![CDATA[2|0|Wait for next sample on corresponding input|Emit available sample on corresponding input]]></Property>
     <Property LongName="switcher_1_1.threaded" Type="0">true</Property>
     <Property LongName="switcher_1_1.priority" Type="1">128</Property>
@@ -1040,7 +1343,7 @@
     <Property LongName="UTMConverter_1.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="UTMConverter_1.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="UTMConverter_1.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="UTMConverter_1.pythonPID" Type="1">14888</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="UTMConverter_1.pythonPID" Type="1">17004</ReadOnlyProperty>
     <Property LongName="UTMConverter_1.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="UTMConverter_1.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="UTMConverter_1.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -1231,7 +1534,7 @@
     <Property LongName="Vehicle.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Vehicle.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Vehicle.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="Vehicle.pythonPID" Type="1">15812</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Vehicle.pythonPID" Type="1">14412</ReadOnlyProperty>
     <Property LongName="Vehicle.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Vehicle.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Vehicle.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -1241,7 +1544,7 @@
     <Property LongName="Vehicle.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/Nicolas/Documents/GitHub/Rtmaps_Autopilot_Project/AMI_Project/python_script/Rtmaps_Control_AMI.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/python_script/Rtmaps_Control_AMI.py]]></Relative></Property>
     <Property LongName="Vehicle.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
     <ReadOnlyProperty LongName="Vehicle.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="Vehicle.userSubsection" Type="3" SubType="256"><![CDATA[User Subsection]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Vehicle.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
     <Property LongName="Vehicle.HOST" Type="3"><![CDATA[127.0.0.1]]></Property>
     <Property LongName="Vehicle.PORT" Type="1">2000</Property>
     <Property LongName="Vehicle.WIDTH" Type="1">1280</Property>
@@ -1308,7 +1611,7 @@
     <Property LongName="yawreader_1.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="yawreader_1.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="yawreader_1.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="yawreader_1.pythonPID" Type="1">14936</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="yawreader_1.pythonPID" Type="1">15700</ReadOnlyProperty>
     <Property LongName="yawreader_1.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="yawreader_1.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="yawreader_1.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -1338,6 +1641,14 @@
   <Connection Output="yawreader_1.out" Input="data_vectorizer_1_1_1.i_data_3"/>
   <Connection Output="yawreader_1.out" Input="DataViewer_1.input_0"/>
   <Connection Output="AngleErreur_1_1.Lat_cmd" Input="DataViewer_1.input_1"/>
+  <Connection Output="Player_1.stdBin_Ixblue.position_f64_LatitudeDeg_LongitudeDeg_AltitudeRef_AltitudeM" Input="DataViewer_2.input_0">
+    <Replay Method="tabbed_text"/>
+  </Connection>
+  <Connection Output="Player_1.stdBin_Ixblue.attitudeHeading_f64_RollDeg_PitchDeg_HeadingDeg" Input="DataViewer_2.input_1">
+    <Replay Method="tabbed_text"/>
+  </Connection>
+  <Connection Output="Vehicle.speedKmh" Input="DataViewer_2_1.input_0"/>
+  <Connection Output="Vehicle.rollPitchYaw" Input="DataViewer_2_1.input_1"/>
   <Connection Output="Image_Processing.out" Input="Front_Camera.input"/>
   <Connection Output="ChgtRepere_1.targetXY" Input="GL2_3D_Viewer_1_1.object_0_data"/>
   <Connection Output="Better_Traj_1.viewer" Input="GL2_3D_Viewer_1_1.object_1_data"/>
@@ -1393,6 +1704,9 @@
       <Description/>
     </ComponentBox>
     <ComponentBox InstanceName="data_vectorizer_1_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="DataViewer_2_1" reversed="false">
       <Description/>
     </ComponentBox>
     <ComponentBox InstanceName="GL2_3D_Viewer_1_1" reversed="false">
@@ -1531,7 +1845,10 @@
     <ConnectionShape InstanceName="DataViewer_1.input_1" color="0"/>
     <ConnectionShape InstanceName="DataViewer_1_1.input_0" color="0"/>
     <ConnectionShape InstanceName="DataViewer_1_1.input_1" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_0" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_1" color="0"/>
     <ConnectionShape InstanceName="DataViewer_2_1.input_0" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2_1.input_1" color="0"/>
     <ConnectionShape InstanceName="DataViewer_3.input_0" color="0"/>
     <ConnectionShape InstanceName="DataViewer_3.input_1" color="0"/>
     <ConnectionShape InstanceName="DataViewer_x_y.input_0" color="0"/>

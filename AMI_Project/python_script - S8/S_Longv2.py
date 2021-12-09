@@ -21,10 +21,10 @@ class rtmaps_python(BaseComponent):
     # Birth() will be called once at diagram execution startup
     def Birth(self):
         # print("Python Birth")
-        self.V_fast = 1.5 #Straight line speed
-        self.V_slow = 0.6 #Small turn speed
+        self.V_fast = 0.2 #Straight line speed
+        self.V_slow = 0.05 #Small turn speed
         self.accel = 0.02 #  m/sec-2 /10
-
+        self.outputs["V_smooth"].write(0.0)
         #variables init
         self.V_smooth = 0.0
         self.savedTime = time.thread_time_ns()

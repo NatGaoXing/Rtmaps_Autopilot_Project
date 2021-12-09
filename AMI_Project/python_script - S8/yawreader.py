@@ -23,7 +23,7 @@ class rtmaps_python(BaseComponent):
 # Core() is called every time you have a new input
     def Core(self):
         out = self.inputs["in"].ioelt.data# create an ioelt from the input
-        out[2] = math.radians(out[2]+90)
+        out[2] = math.radians(out[2]+180)
         self.outputs["out"].write(np.float64(out[2])) # and write it to the output
 
 # Death() will be called once at diagram execution shutdown

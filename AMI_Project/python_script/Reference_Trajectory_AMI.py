@@ -44,7 +44,7 @@ class Spline:
 
         return result
 
-    def calcd(self, t):
+    def calc_d(self, t):
         if t < self.x[0]:
             return None
         elif t > self.x[-1]:
@@ -55,7 +55,7 @@ class Spline:
         result = self.b[i] + 2.0 * self.c[i] * dx + 3.0 * self.d[i] * dx ** 2.0
         return result
 
-    def calcdd(self, t):
+    def calc_dd(self, t):
         if t < self.x[0]:
             return None
         elif t > self.x[-1]:
@@ -114,16 +114,16 @@ class Spline2D:
         return x, y
 
     def calc_curvature(self, s):
-        dx = self.sx.calcd(s)
-        ddx = self.sx.calcdd(s)
-        dy = self.sy.calcd(s)
-        ddy = self.sy.calcdd(s)
+        dx = self.sx.calc_d(s)
+        ddx = self.sx.calc_dd(s)
+        dy = self.sy.calc_d(s)
+        ddy = self.sy.calc_dd(s)
         k = (ddy * dx - ddx * dy) / ((dx ** 2 + dy ** 2) ** (3 / 2))
         return k
 
     def calc_yaw(self, s):
-        dx = self.sx.calcd(s)
-        dy = self.sy.calcd(s)
+        dx = self.sx.calc_d(s)
+        dy = self.sy.calc_d(s)
         yaw = math.atan2(dy, dx)
         return yaw
 
@@ -132,15 +132,15 @@ def calc_spline_course(x, y, ds=0.1):
     sp = Spline2D(x, y)
     s = list(np.arange(0, sp.s[-1], ds))
 
-    rx, ry, ryaw, rk = [], [], [], []
+    r_x, r_y, r_yaw, r_k = [], [], [], []
     for i_s in s:
         ix, iy = sp.calc_position(i_s)
-        rx.append(ix)
-        ry.append(iy)
-        ryaw.append(sp.calc_yaw(i_s))
-        rk.append(sp.calc_curvature(i_s))
+        r_x.append(ix)
+        r_y.append(iy)
+        r_yaw.append(sp.calc_yaw(i_s))
+        r_k.append(sp.calc_curvature(i_s))
 
-    return rx, ry, ryaw, rk, s
+    return r_x, r_y, r_yaw, r_k, s
 
 
 class rtmaps_python(BaseComponent):
@@ -159,9 +159,9 @@ class rtmaps_python(BaseComponent):
         # input: list of GPS points (after changing the coordinate system)
         self.add_input("GPS_xy", rtmaps.types.ANY)
         # output: list of X values
-        self.add_output("ref_x", rtmaps.types.AUTO, 1000)
-        # output: list of Y values
         self.add_output("ref_y", rtmaps.types.AUTO, 1000)
+        # output: list of Y values
+        self.add_output("ref_x", rtmaps.types.AUTO, 1000)
         # output: list of Yaw values
         self.add_output("ref_yaw", rtmaps.types.AUTO, 1000)
         self.add_output("viewer", rtmaps.types.AUTO, 1000)
@@ -183,14 +183,13 @@ class rtmaps_python(BaseComponent):
         if len(gps_y) < 2:
             gps_x = [0.0, *gps_x]
             gps_y = [0.5, *gps_y]
-
         # calculate a reference trajectory
         ref_x, ref_y, ref_yaw, ref_k, s = calc_spline_course(gps_x, gps_y, ds=self.dt)
 
         self.outputs["ref_x"].write(ref_x)
         self.outputs["ref_y"].write(ref_y)
         self.outputs["ref_yaw"].write(ref_yaw)
-        gps_xy=[]
+        gps_xy = []
         for i in range(len(ref_x)):
             gps_xy.append(ref_y[i])
             gps_xy.append(-ref_x[i])
@@ -198,7 +197,4 @@ class rtmaps_python(BaseComponent):
         self.outputs["viewer"].write(gps_xy)
 
     def Death(self):
-        # self.trajectoryFile.close()
-        # self.trajectoryFile2.close()
-        # self.trajectoryFile3.close()
         pass

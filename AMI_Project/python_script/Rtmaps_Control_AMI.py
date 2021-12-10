@@ -14,7 +14,7 @@ from queue import Empty
 
 from openpyxl import Workbook, load_workbook
 
-CARLA_PYTHON_DIRECTORY = "C:/Users/Nicolas/Documents/UTAC Local/CARLA 0_9_11/PythonAPI"
+CARLA_PYTHON_DIRECTORY = "C:/Users/GAO Xing/Desktop/CARLA_0.9.11/WindowsNoEditor/PythonAPI"
 
 try:
     sys.path.append(glob.glob('../carla/dist/carla-*%d.%d-%s.egg' % (
@@ -54,7 +54,7 @@ def getPose(world):
 
     roll = np.radians(t.rotation.roll)
     pitch = np.radians(-t.rotation.pitch)
-    yaw = t.rotation.yaw
+    yaw = np.radians(np.radians(-t.rotation.yaw))
 
     return speedKmh, world.imu_sensor.accelerometer, world.imu_sensor.gyroscope, (
         world.gnss_sensor.lat, world.gnss_sensor.lon, world.gnss_sensor.alt), roll, pitch, yaw, world.gnss_sensor.ts
@@ -319,7 +319,7 @@ class rtmaps_python(BaseComponent):
         self.outputs["accXYZ"].write(np.array(accx3), ts=timeStampUs)
         self.outputs["gyroXYZ"].write(np.array(gyrox3), ts=timeStampUs)
         self.outputs["imuLatLongAlt"].write(np.array(imu3), ts=timeStampUs)
-        self.outputs["rollPitchYaw"].write(np.array([roll, pitch, (90+yaw)]), ts=timeStampUs)
+        self.outputs["rollPitchYaw"].write(np.array([roll, pitch, (180+math.degrees(math.degrees(-yaw)))]), ts=timeStampUs)
 
     def spawnVehicles(self, number_of_vehicles):
         self.traffic_manager = self.client.get_trafficmanager(int(self.properties["TM_PORT"].data))

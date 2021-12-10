@@ -8,13 +8,13 @@ import math
 import glob
 import os
 import sys
-
+import time
 from queue import Queue
 from queue import Empty
 
 from openpyxl import Workbook, load_workbook
 
-CARLA_PYTHON_DIRECTORY = "C:/Users/GAO Xing/Desktop/CARLA_0.9.11/WindowsNoEditor/PythonAPI"
+CARLA_PYTHON_DIRECTORY = "C:/Users/Nicolas/Documents/UTAC Local/CARLA 0_9_11/PythonAPI"
 
 try:
     sys.path.append(glob.glob('../carla/dist/carla-*%d.%d-%s.egg' % (
@@ -165,6 +165,8 @@ class rtmaps_python(BaseComponent):
         self.add_output("imageCamera", rtmaps.types.AUTO)
 
     def Birth(self):
+        self.savedTime = time.thread_time_ns()
+        self.angle = 0.0
         pass
 
     def Core(self):
@@ -256,7 +258,14 @@ class rtmaps_python(BaseComponent):
             print("error")
             return  # no data in fifo
         dataRtmaps = self.inputs["in"].ioelt.data
+        speedKmh, accx3, gyrox3, imu3, roll, pitch, yaw, gnssTS = \
+            getPose(self.world)
+        if time.time_ns() - self.savedTime > 10000 and speedKmh > 0:  # Triggers every 10ms
+            self.savedTime = time.time_ns()
+            self.angle = self.angle + ((dataRtmaps[4] - gyrox3[2] / (speedKmh/3.6) * (speedKmh/3.6)) / 1000)
 
+
+        dataRtmaps[4] =self.angle
         self.clock.tick_busy_loop(60)
         # update carla control
         if len(dataRtmaps) >= 5:
@@ -301,9 +310,9 @@ class rtmaps_python(BaseComponent):
                     p_cloud = p_cloud.reshape(-1).astype("float64")
                     self.outputs["ptCloud"].write(p_cloud, ts=timeStampUs)
 
-        speedKmh, accx3, gyrox3, imu3, roll, pitch, yaw, gnssTS = \
-            getPose(self.world)
+
         timeStampUs = rt.current_time()
+
 
         if self.properties["UseSimulationTimeStamp"].data:
             timeStampUs = int(gnssTS * 1000000.0)

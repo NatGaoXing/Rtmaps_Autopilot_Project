@@ -16,9 +16,9 @@ class rtmaps_python(BaseComponent):
         self.i = 0
         # self.multi = 1.2
         self.coefLine = 0
-        self.pid = PID(2.0, 0.0, 0.0, setpoint=0)
+        self.pid = PID(1.0, 0.0, 0.0, setpoint=0)
         self.pid.sample_time = 0.01
-        self.pid.output_limits = (-math.pi, math.pi)
+        self.pid.output_limits = (-180, 180)
 
     def Dynamic(self):
         self.add_input("TargetY", rtmaps.types.ANY)
@@ -58,7 +58,7 @@ class rtmaps_python(BaseComponent):
         angle = math.atan2(-x, y) + distancePtLine * self.coefLine
 
         # apply pid
-        command = self.pid(-angle)
+        command = self.pid(math.degrees(-angle))
 
         # log command
         self.trajectoryFile.write(str(command))
@@ -69,7 +69,7 @@ class rtmaps_python(BaseComponent):
             self.outputs["Lat_cmd"].write(0.0)
             self.outputs["A"].write(-2)
         else:  # else write command and determine whether we should go fast or not
-            self.outputs["Lat_cmd"].write(-command / math.pi)  # y is the longitudinal axis
+            self.outputs["Lat_cmd"].write(-command)  # y is the longitudinal axis
             x_sp = X_list[len(X_list) - 1]
             y_sp = Y_list[len(Y_list) - 1]
 

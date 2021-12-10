@@ -14,7 +14,7 @@ from queue import Empty
 
 from openpyxl import Workbook, load_workbook
 
-CARLA_PYTHON_DIRECTORY = "C:/Users/Nicolas/Documents/UTAC Local/CARLA 0_9_11/PythonAPI"
+CARLA_PYTHON_DIRECTORY = "C:/Users/GAO Xing/Desktop/CARLA_0.9.11/WindowsNoEditor/PythonAPI"
 
 try:
     sys.path.append(glob.glob('../carla/dist/carla-*%d.%d-%s.egg' % (
@@ -81,19 +81,11 @@ class rtmaps_python(BaseComponent):
 
         self.isFirst = True
 
-        self.client = carla.Client(self.HOST, self.PORT)
-        self.client.set_timeout(2.0)
-
-        pygame.init()
-        pygame.font.init()
-        self.display = pygame.display.set_mode((self.WIDTH, self.HEIGHT), pygame.HWSURFACE | pygame.DOUBLEBUF)
-        self.display.fill((0, 0, 0))
-        pygame.display.flip()
-
-        self.hud = HUD(self.WIDTH, self.HEIGHT)
+        self.client = None
+        self.display = None
 
         self.controller = None
-        self.clock = pygame.time.Clock()
+        self.clock = None
         self.image_queue = Queue()
         self.lidar_queue = Queue()
         self.cameraFront = None
@@ -101,6 +93,10 @@ class rtmaps_python(BaseComponent):
 
         self.traffic_manager = None
         self.all_actors = None
+        self.hud = None
+
+        self.savedTime = time.thread_time_ns()
+        self.angle = 0.0
 
     def Dynamic(self):
         self.add_property("HOST", '127.0.0.1')
@@ -165,9 +161,20 @@ class rtmaps_python(BaseComponent):
         self.add_output("imageCamera", rtmaps.types.AUTO)
 
     def Birth(self):
-        self.savedTime = time.thread_time_ns()
-        self.angle = 0.0
-        pass
+        self.isFirst = True
+
+        self.client = carla.Client(self.HOST, self.PORT)
+        self.client.set_timeout(2.0)
+
+        pygame.init()
+        pygame.font.init()
+        self.display = pygame.display.set_mode((self.WIDTH, self.HEIGHT), pygame.HWSURFACE | pygame.DOUBLEBUF)
+        self.display.fill((0, 0, 0))
+        pygame.display.flip()
+
+        self.clock = pygame.time.Clock()
+
+        self.hud = HUD(self.WIDTH, self.HEIGHT)
 
     def Core(self):
         if self.isFirst:

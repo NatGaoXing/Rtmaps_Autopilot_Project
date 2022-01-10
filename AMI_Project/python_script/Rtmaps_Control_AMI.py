@@ -114,12 +114,12 @@ class rtmaps_python(BaseComponent):
 
         self.add_property("AutoSpawnVehicle", False)
         if not self.properties["AutoSpawnVehicle"].data:
-            self.add_property("CAR_LOCATION_X", -8.31)
-            self.add_property("CAR_LOCATION_Y", 25.91)
+            self.add_property("CAR_LOCATION_X", 229.12)  # -8.31 # 229.12 # 234.12
+            self.add_property("CAR_LOCATION_Y", 70.96)  # 25.91 # 75.96 # 75.96
             self.add_property("CAR_LOCATION_Z", 2.0)
             self.add_property("CAR_LOCATION_RX", 0.0)
             self.add_property("CAR_LOCATION_RY", 0.0)
-            self.add_property("CAR_LOCATION_RZ", 78.62)
+            self.add_property("CAR_LOCATION_RZ", 91.37)  # 78.62 # 91.37 # 91.37
 
         self.add_property("lidarEnabled", True)
         if self.properties["lidarEnabled"].data:
@@ -271,8 +271,7 @@ class rtmaps_python(BaseComponent):
             self.savedTime = time.time_ns()
             self.angle = self.angle + ((dataRtmaps[4] - gyrox3[2] / (speedKmh/3.6) * (speedKmh/3.6)) / 1000)
 
-
-        dataRtmaps[4] =self.angle
+        dataRtmaps[4] = self.angle
         self.clock.tick_busy_loop(60)
         # update carla control
         if len(dataRtmaps) >= 5:
@@ -329,6 +328,7 @@ class rtmaps_python(BaseComponent):
         gps_x = self.world.player.get_transform().location.x
         gps_y = self.world.player.get_transform().location.y
         gps_yaw = self.world.player.get_transform().rotation.yaw
+        # print([gps_x, gps_y, gps_yaw])
         self.outputs["state"].write(np.array([gps_x, gps_y, gps_yaw]), ts=timeStampUs)
 
         self.outputs["speedKmh"].write(np.array([speedKmh]), ts=timeStampUs)

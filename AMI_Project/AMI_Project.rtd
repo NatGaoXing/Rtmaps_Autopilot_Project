@@ -44,8 +44,8 @@
     <Property LongName="A.moveable" Type="0">true</Property>
     <Property LongName="A.hidden" Type="0">false</Property>
     <Property LongName="A.title" Type="3"><![CDATA[]]></Property>
-    <Property LongName="A.x" Type="1">18</Property>
-    <Property LongName="A.y" Type="1">532</Property>
+    <Property LongName="A.x" Type="1">4</Property>
+    <Property LongName="A.y" Type="1">509</Property>
     <Property LongName="A.width" Type="1">165</Property>
     <Property LongName="A.height" Type="1">320</Property>
     <Property LongName="A.end_guard" Type="0" SubType="128">true</Property>
@@ -63,7 +63,7 @@
     <Property LongName="A.min0" Type="2">0</Property>
     <Property LongName="A.max0" Type="2">1</Property>
     <Property LongName="A.mode0" Type="4"><![CDATA[2|0|Continous|Step]]></Property>
-    <Property LongName="A.value0" Type="2">0.1287462875</Property>
+    <Property LongName="A.value0" Type="2">0.06124561246</Property>
     <Property LongName="A.samplingTime0" Type="1" SubType="1">50000</Property>
     <Property LongName="A.step0" Type="1">1</Property>
     <Property LongName="A.orientation1" Type="4"><![CDATA[2|1|HORIZONTAL|VERTICAL]]></Property>
@@ -111,7 +111,7 @@
     <Property LongName="Angle_Erreur_Controler.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Angle_Erreur_Controler.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Angle_Erreur_Controler.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="Angle_Erreur_Controler.pythonPID" Type="1">1860</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Angle_Erreur_Controler.pythonPID" Type="1">18492</ReadOnlyProperty>
     <Property LongName="Angle_Erreur_Controler.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Angle_Erreur_Controler.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Angle_Erreur_Controler.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -181,7 +181,7 @@
     <Property LongName="Change_Coordinates.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Change_Coordinates.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Change_Coordinates.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="Change_Coordinates.pythonPID" Type="1">15548</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Change_Coordinates.pythonPID" Type="1">19248</ReadOnlyProperty>
     <Property LongName="Change_Coordinates.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Change_Coordinates.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Change_Coordinates.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -242,10 +242,10 @@
       <Property LongName="Front_Camera.oWindowEvent.fifosize" Type="1">16</Property>
       <Property LongName="Front_Camera.oWindowEvent.periodic" Type="0">false</Property>
     </Output>
-    <Property LongName="Front_Camera.left" Type="1">893</Property>
-    <Property LongName="Front_Camera.top" Type="1">256</Property>
-    <Property LongName="Front_Camera.width" Type="1">469</Property>
-    <Property LongName="Front_Camera.height" Type="1">273</Property>
+    <Property LongName="Front_Camera.left" Type="1">825</Property>
+    <Property LongName="Front_Camera.top" Type="1">370</Property>
+    <Property LongName="Front_Camera.width" Type="1">640</Property>
+    <Property LongName="Front_Camera.height" Type="1">480</Property>
     <Property LongName="Front_Camera.autoResize" Type="0">true</Property>
     <Property LongName="Front_Camera.alwaysOnTop" Type="0">true</Property>
     <Property LongName="Front_Camera.fullscreen" Type="0">false</Property>
@@ -373,10 +373,10 @@
     <ReadOnlyProperty LongName="GL2_3D_Viewer_1.viewport_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="GL2_3D_Viewer_1.window_subsection_begin" Type="3" SubType="256"><![CDATA[Window]]></ReadOnlyProperty>
     <Property LongName="GL2_3D_Viewer_1.title" Type="3"><![CDATA[]]></Property>
-    <Property LongName="GL2_3D_Viewer_1.left" Type="1">269</Property>
-    <Property LongName="GL2_3D_Viewer_1.top" Type="1">346</Property>
-    <Property LongName="GL2_3D_Viewer_1.width" Type="1">744</Property>
-    <Property LongName="GL2_3D_Viewer_1.height" Type="1">557</Property>
+    <Property LongName="GL2_3D_Viewer_1.left" Type="1">1125</Property>
+    <Property LongName="GL2_3D_Viewer_1.top" Type="1">306</Property>
+    <Property LongName="GL2_3D_Viewer_1.width" Type="1">651</Property>
+    <Property LongName="GL2_3D_Viewer_1.height" Type="1">487</Property>
     <Property LongName="GL2_3D_Viewer_1.windowBackend" Type="4"><![CDATA[1|0|Win32]]></Property>
     <Property LongName="GL2_3D_Viewer_1.sequentialRender" Type="0">false</Property>
     <Property LongName="GL2_3D_Viewer_1.keepWindowAspectRatio" Type="0">true</Property>
@@ -417,7 +417,7 @@
     <Property LongName="Image_Processing.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Image_Processing.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Image_Processing.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="Image_Processing.pythonPID" Type="1">9492</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Image_Processing.pythonPID" Type="1">8780</ReadOnlyProperty>
     <Property LongName="Image_Processing.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Image_Processing.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Image_Processing.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -447,10 +447,10 @@
     <Property LongName="is_auto_pilot.moveable" Type="0">true</Property>
     <Property LongName="is_auto_pilot.hidden" Type="0">false</Property>
     <Property LongName="is_auto_pilot.title" Type="3"><![CDATA[]]></Property>
-    <Property LongName="is_auto_pilot.x" Type="1">183</Property>
-    <Property LongName="is_auto_pilot.y" Type="1">852</Property>
-    <Property LongName="is_auto_pilot.width" Type="1">611</Property>
-    <Property LongName="is_auto_pilot.height" Type="1">95</Property>
+    <Property LongName="is_auto_pilot.x" Type="1">5</Property>
+    <Property LongName="is_auto_pilot.y" Type="1">417</Property>
+    <Property LongName="is_auto_pilot.width" Type="1">304</Property>
+    <Property LongName="is_auto_pilot.height" Type="1">93</Property>
     <Property LongName="is_auto_pilot.end_guard" Type="0" SubType="128">true</Property>
     <ReadOnlyProperty LongName="is_auto_pilot.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="is_auto_pilot.vector_begin_config" Type="3" SubType="256"><![CDATA[Multiple Widgets Configuration]]></ReadOnlyProperty>
@@ -496,8 +496,8 @@
     <Property LongName="is_Record.moveable" Type="0">true</Property>
     <Property LongName="is_Record.hidden" Type="0">false</Property>
     <Property LongName="is_Record.title" Type="3"><![CDATA[]]></Property>
-    <Property LongName="is_Record.x" Type="1">6</Property>
-    <Property LongName="is_Record.y" Type="1">113</Property>
+    <Property LongName="is_Record.x" Type="1">131</Property>
+    <Property LongName="is_Record.y" Type="1">336</Property>
     <Property LongName="is_Record.width" Type="1">129</Property>
     <Property LongName="is_Record.height" Type="1">84</Property>
     <Property LongName="is_Record.end_guard" Type="0" SubType="128">true</Property>
@@ -561,10 +561,10 @@
     <Property LongName="is_Stop.moveable" Type="0">true</Property>
     <Property LongName="is_Stop.hidden" Type="0">false</Property>
     <Property LongName="is_Stop.title" Type="3"><![CDATA[]]></Property>
-    <Property LongName="is_Stop.x" Type="1">6</Property>
-    <Property LongName="is_Stop.y" Type="1">197</Property>
-    <Property LongName="is_Stop.width" Type="1">129</Property>
-    <Property LongName="is_Stop.height" Type="1">82</Property>
+    <Property LongName="is_Stop.x" Type="1">3</Property>
+    <Property LongName="is_Stop.y" Type="1">336</Property>
+    <Property LongName="is_Stop.width" Type="1">130</Property>
+    <Property LongName="is_Stop.height" Type="1">84</Property>
     <Property LongName="is_Stop.end_guard" Type="0" SubType="128">true</Property>
     <ReadOnlyProperty LongName="is_Stop.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="is_Stop.vector_begin_config" Type="3" SubType="256"><![CDATA[Multiple Widgets Configuration]]></ReadOnlyProperty>
@@ -617,7 +617,7 @@
     <Property LongName="Recorder.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Recorder.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Recorder.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="Recorder.pythonPID" Type="1">5220</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Recorder.pythonPID" Type="1">12428</ReadOnlyProperty>
     <Property LongName="Recorder.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Recorder.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Recorder.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -667,8 +667,8 @@
     <Property LongName="Reference_Trajectory.logDebug" Type="0">false</Property>
     <Property LongName="Reference_Trajectory.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Reference_Trajectory.autoReloadSubModules" Type="0">true</Property>
-    <Property LongName="Reference_Trajectory.memorySize" Type="1">30000000</Property>
-    <ReadOnlyProperty LongName="Reference_Trajectory.pythonPID" Type="1">15220</ReadOnlyProperty>
+    <Property LongName="Reference_Trajectory.memorySize" Type="1">270000000</Property>
+    <ReadOnlyProperty LongName="Reference_Trajectory.pythonPID" Type="1">14128</ReadOnlyProperty>
     <Property LongName="Reference_Trajectory.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Reference_Trajectory.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Reference_Trajectory.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -749,7 +749,7 @@
     <Property LongName="UTM_Converter.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="UTM_Converter.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="UTM_Converter.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="UTM_Converter.pythonPID" Type="1">6976</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="UTM_Converter.pythonPID" Type="1">16228</ReadOnlyProperty>
     <Property LongName="UTM_Converter.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="UTM_Converter.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="UTM_Converter.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -897,14 +897,14 @@
     <Property LongName="Vehicle.guard_begin" Type="0" SubType="128">true</Property>
     <Property LongName="Vehicle.internalInputs" Type="3" SubType="128"><![CDATA[in;1==]]></Property>
     <Property LongName="Vehicle.internalOutputs" Type="3" SubType="128"><![CDATA[state;11==;0#speedKmh;11==;0#accXYZ;11==;0#gyroXYZ;11==;0#imuLatLongAlt;11==;0#rollPitchYaw;11==;0#ptCloud;11==;100000#imageCamera;0==;0]]></Property>
-    <Property LongName="Vehicle.internalProperties" Type="3" SubType="128"><![CDATA[HOST||13||127.0.0.1||13#PORT||8||2000#WIDTH||8||1280#HEIGHT||8||720#Gamma||11||2.2#Rolename||13||hero||13#Filter||13||vehicle.bwm.i*||13#TM_PORT||8||8000#UseSimulationTimeStamp||23||1#WalkerNumberToSpawn||8||0#VehiclesNumberToSpawn||8||0#AutoSpawnVehicle||23||0#CAR_LOCATION_X||11||-8.31#CAR_LOCATION_Y||11||25.91#CAR_LOCATION_Z||11||2#CAR_LOCATION_RX||11||0#CAR_LOCATION_RY||11||0#CAR_LOCATION_RZ||11||78.62#lidarEnabled||23||1#LIDAR_MAX_RANGE_IN_M||11||50#LIDAR_NB_LAYERS||8||16#LIDAR_ROTATION_FREQUENCY_HZ||8||20#LIDAR_UPPER_FOV_IN_DEG||8||15#LIDAR_LOWER_FOV_IN_DEG||8||-15#LIDAR_NOISE_IN_M||11||0.02#LIDAR_CAR_LOCATION_X||11||1#LIDAR_CAR_LOCATION_Y||11||0#LIDAR_CAR_LOCATION_Z||11||1.8#LIDAR_CAR_LOCATION_RX||11||0#LIDAR_CAR_LOCATION_RY||11||0#LIDAR_CAR_LOCATION_RZ||11||0#cameraEnabled||23||1#CAMERA_IMAGE_WIDTH||8||640#CAMERA_IMAGE_HEIGHT||8||480#CAMERA_IMAGE_FOV||11||69#CAMERA_LOCATION_X||11||1.5#CAMERA_LOCATION_Y||11||-0.1#CAMERA_LOCATION_Z||11||1.8#CAMERA_LOCATION_RX||11||0#CAMERA_LOCATION_RY||11||-15#CAMERA_LOCATION_RZ||11||0]]></Property>
+    <Property LongName="Vehicle.internalProperties" Type="3" SubType="128"><![CDATA[HOST||13||127.0.0.1||13#PORT||8||2000#WIDTH||8||1280#HEIGHT||8||720#Gamma||11||2.2#Rolename||13||hero||13#Filter||13||vehicle.bwm.i*||13#TM_PORT||8||8000#UseSimulationTimeStamp||23||1#WalkerNumberToSpawn||8||0#VehiclesNumberToSpawn||8||0#AutoSpawnVehicle||23||0#CAR_LOCATION_X||11||229.12#CAR_LOCATION_Y||11||70.96#CAR_LOCATION_Z||11||2#CAR_LOCATION_RX||11||0#CAR_LOCATION_RY||11||0#CAR_LOCATION_RZ||11||91.37#lidarEnabled||23||1#LIDAR_MAX_RANGE_IN_M||11||50#LIDAR_NB_LAYERS||8||16#LIDAR_ROTATION_FREQUENCY_HZ||8||20#LIDAR_UPPER_FOV_IN_DEG||8||15#LIDAR_LOWER_FOV_IN_DEG||8||-15#LIDAR_NOISE_IN_M||11||0.02#LIDAR_CAR_LOCATION_X||11||1#LIDAR_CAR_LOCATION_Y||11||0#LIDAR_CAR_LOCATION_Z||11||1.8#LIDAR_CAR_LOCATION_RX||11||0#LIDAR_CAR_LOCATION_RY||11||0#LIDAR_CAR_LOCATION_RZ||11||0#cameraEnabled||23||1#CAMERA_IMAGE_WIDTH||8||640#CAMERA_IMAGE_HEIGHT||8||480#CAMERA_IMAGE_FOV||11||69#CAMERA_LOCATION_X||11||1.5#CAMERA_LOCATION_Y||11||-0.1#CAMERA_LOCATION_Z||11||1.8#CAMERA_LOCATION_RX||11||0#CAMERA_LOCATION_RY||11||-15#CAMERA_LOCATION_RZ||11||0]]></Property>
     <ReadOnlyProperty LongName="Vehicle.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
     <Property LongName="Vehicle.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
     <Property LongName="Vehicle.logDebug" Type="0">false</Property>
     <Property LongName="Vehicle.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Vehicle.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Vehicle.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="Vehicle.pythonPID" Type="1">1784</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Vehicle.pythonPID" Type="1">8136</ReadOnlyProperty>
     <Property LongName="Vehicle.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Vehicle.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Vehicle.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -927,12 +927,12 @@
     <Property LongName="Vehicle.WalkerNumberToSpawn" Type="1">0</Property>
     <Property LongName="Vehicle.VehiclesNumberToSpawn" Type="1">0</Property>
     <Property LongName="Vehicle.AutoSpawnVehicle" Type="0">false</Property>
-    <Property LongName="Vehicle.CAR_LOCATION_X" Type="2">-8.31</Property>
-    <Property LongName="Vehicle.CAR_LOCATION_Y" Type="2">25.91</Property>
+    <Property LongName="Vehicle.CAR_LOCATION_X" Type="2">229.12</Property>
+    <Property LongName="Vehicle.CAR_LOCATION_Y" Type="2">70.96</Property>
     <Property LongName="Vehicle.CAR_LOCATION_Z" Type="2">2</Property>
     <Property LongName="Vehicle.CAR_LOCATION_RX" Type="2">0</Property>
     <Property LongName="Vehicle.CAR_LOCATION_RY" Type="2">0</Property>
-    <Property LongName="Vehicle.CAR_LOCATION_RZ" Type="2">78.62</Property>
+    <Property LongName="Vehicle.CAR_LOCATION_RZ" Type="2">91.37</Property>
     <Property LongName="Vehicle.lidarEnabled" Type="0">true</Property>
     <Property LongName="Vehicle.LIDAR_MAX_RANGE_IN_M" Type="2">50</Property>
     <Property LongName="Vehicle.LIDAR_NB_LAYERS" Type="1">16</Property>
@@ -981,7 +981,7 @@
     <Property LongName="Yaw_Reader.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Yaw_Reader.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Yaw_Reader.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="Yaw_Reader.pythonPID" Type="1">12740</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Yaw_Reader.pythonPID" Type="1">20736</ReadOnlyProperty>
     <Property LongName="Yaw_Reader.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Yaw_Reader.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Yaw_Reader.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>

@@ -16,7 +16,7 @@ class rtmaps_python(BaseComponent):
         self.i = 0
         # self.multi = 1.2
         self.coefLine = 0
-        self.pid = PID(1.0, 0.0, 0.0, setpoint=0)
+        self.pid = PID(0.5, 0.0, 0.0, setpoint=0)
         self.pid.sample_time = 0.01
         self.pid.output_limits = (-180, 180)
 
@@ -69,7 +69,7 @@ class rtmaps_python(BaseComponent):
             self.outputs["Lat_cmd"].write(0.0)
             self.outputs["A"].write(-2)
         else:  # else write command and determine whether we should go fast or not
-            self.outputs["Lat_cmd"].write(-command)  # y is the longitudinal axis
+            self.outputs["Lat_cmd"].write(command)  # y is the longitudinal axis
             x_sp = X_list[len(X_list) - 1]
             y_sp = Y_list[len(Y_list) - 1]
 

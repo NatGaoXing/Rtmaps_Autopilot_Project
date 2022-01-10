@@ -265,13 +265,16 @@ class rtmaps_python(BaseComponent):
             print("error")
             return  # no data in fifo
         dataRtmaps = self.inputs["in"].ioelt.data
+        dataRtmaps[4]=-dataRtmaps[4]*3 # Adaptation pour se rapporcher du modèle réel
+
         speedKmh, accx3, gyrox3, imu3, roll, pitch, yaw, gnssTS = \
             getPose(self.world)
         if time.time_ns() - self.savedTime > 10000 and speedKmh > 0:  # Triggers every 10ms
             self.savedTime = time.time_ns()
             self.angle = self.angle + ((dataRtmaps[4] - gyrox3[2] / (speedKmh/3.6) * (speedKmh/3.6)) / 1000)
 
-        dataRtmaps[4] = self.angle
+
+        dataRtmaps[4] =self.angle
         self.clock.tick_busy_loop(60)
         # update carla control
         if len(dataRtmaps) >= 5:
@@ -328,14 +331,13 @@ class rtmaps_python(BaseComponent):
         gps_x = self.world.player.get_transform().location.x
         gps_y = self.world.player.get_transform().location.y
         gps_yaw = self.world.player.get_transform().rotation.yaw
-        # print([gps_x, gps_y, gps_yaw])
         self.outputs["state"].write(np.array([gps_x, gps_y, gps_yaw]), ts=timeStampUs)
 
         self.outputs["speedKmh"].write(np.array([speedKmh]), ts=timeStampUs)
         self.outputs["accXYZ"].write(np.array(accx3), ts=timeStampUs)
         self.outputs["gyroXYZ"].write(np.array(gyrox3), ts=timeStampUs)
         self.outputs["imuLatLongAlt"].write(np.array(imu3), ts=timeStampUs)
-        self.outputs["rollPitchYaw"].write(np.array([roll, pitch, (180+math.degrees(math.degrees(-yaw)))]), ts=timeStampUs)
+        self.outputs["rollPitchYaw"].write(np.array([roll, pitch, (90+math.degrees(math.degrees(-yaw)))]), ts=timeStampUs)
 
     def spawnVehicles(self, number_of_vehicles):
         self.traffic_manager = self.client.get_trafficmanager(int(self.properties["TM_PORT"].data))

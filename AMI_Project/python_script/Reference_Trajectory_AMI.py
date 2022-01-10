@@ -153,7 +153,7 @@ class rtmaps_python(BaseComponent):
         # list contains a reference trajectory
         self.ref_traj = []
         # sample time 0.5s
-        self.dt = 1
+        self.dt = 2
 
     def Dynamic(self):
         # input: list of GPS points (after changing the coordinate system)

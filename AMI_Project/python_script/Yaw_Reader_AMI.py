@@ -19,7 +19,7 @@ class rtmaps_python(BaseComponent):
 
     def Core(self):
         out = self.inputs["in"].ioelt.data
-        out[2] = math.radians(out[2]+90)
+        out[2] = math.radians(out[2]+180)
         self.outputs["out"].write(np.float64(out[2]))
 
     def Death(self):

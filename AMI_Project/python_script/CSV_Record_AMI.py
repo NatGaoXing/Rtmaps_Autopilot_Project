@@ -20,7 +20,7 @@ class rtmaps_python(BaseComponent):
         self.previousY = 0.0
         self.previousX = 0.0
         self.trajectoryFile = None
-        self.distPts = 5
+        self.distPts = 2
 
         self.IMU = None
         self.recording = 0

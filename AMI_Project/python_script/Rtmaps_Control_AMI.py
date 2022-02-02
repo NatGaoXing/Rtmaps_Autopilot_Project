@@ -14,7 +14,7 @@ from queue import Empty
 
 from openpyxl import Workbook, load_workbook
 
-CARLA_PYTHON_DIRECTORY = "C:/Users/GAO Xing/Desktop/CARLA_0.9.11/WindowsNoEditor/PythonAPI"
+CARLA_PYTHON_DIRECTORY = "C:/Users/Nicolas/Documents/UTAC Local/CARLA 0_9_11/PythonAPI"
 
 try:
     sys.path.append(glob.glob('../carla/dist/carla-*%d.%d-%s.egg' % (
@@ -123,9 +123,9 @@ class rtmaps_python(BaseComponent):
 
         self.add_property("lidarEnabled", True)
         if self.properties["lidarEnabled"].data:
-            self.add_property("LIDAR_MAX_RANGE_IN_M", 50.0)
-            self.add_property("LIDAR_NB_LAYERS", 16)
-            self.add_property("LIDAR_ROTATION_FREQUENCY_HZ", 20)
+            self.add_property("LIDAR_MAX_RANGE_IN_M", 20.0) #old = 50
+            self.add_property("LIDAR_NB_LAYERS", 16) #old = 16
+            self.add_property("LIDAR_ROTATION_FREQUENCY_HZ", 10) #old = 20
             self.add_property("LIDAR_UPPER_FOV_IN_DEG", 15)
             self.add_property("LIDAR_LOWER_FOV_IN_DEG", -15)
             self.add_property("LIDAR_NOISE_IN_M", 0.02)
@@ -197,6 +197,11 @@ class rtmaps_python(BaseComponent):
                                                              yaw=self.properties["CAR_LOCATION_RZ"].data))
 
                 self.world = World(self.client.get_world(), self.hud, carPose, args)
+                
+                #SPAWN OBJECT to detect
+                for i in range(0,20):
+                    transform = carla.Transform(carla.Location(x=229.5, y=100+i, z=1), carla.Rotation(yaw=0)) 
+                    self.actor = self.world.world.spawn_actor(self.world.world.get_blueprint_library().filter("busstop")[0], transform)
 
                 self.controller = KeyboardControl(self.world, False)
 
@@ -271,7 +276,7 @@ class rtmaps_python(BaseComponent):
             getPose(self.world)
         if time.time_ns() - self.savedTime > 10000 and speedKmh > 0:  # Triggers every 10ms
             self.savedTime = time.time_ns()
-            self.angle = self.angle + ((dataRtmaps[4] - gyrox3[2] / (speedKmh/3.6) * (speedKmh/3.6)) / 1000)
+            self.angle = self.angle*0.5 + 2*((dataRtmaps[4] - gyrox3[2] / (speedKmh/3.6) * (speedKmh/3.6)) / 1000) #self.angle + le reste
 
 
         dataRtmaps[4] =self.angle
@@ -496,6 +501,9 @@ class rtmaps_python(BaseComponent):
 
         if self.lidar is not None:
             self.lidar.destroy()
+            
+        if self.actor is not None:
+            self.actor.destroy()
 
         if self.cameraFront is not None:
             self.cameraFront.destroy()

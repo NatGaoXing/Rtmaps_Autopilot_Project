@@ -153,7 +153,7 @@ class rtmaps_python(BaseComponent):
         # list contains a reference trajectory
         self.ref_traj = []
         # sample time 0.5s
-        self.dt = 2
+        self.dt = 0.5
 
     def Dynamic(self):
         # input: list of GPS points (after changing the coordinate system)
@@ -173,9 +173,15 @@ class rtmaps_python(BaseComponent):
         # dimension of the list
         len_list = len(self.inputs["GPS_xy"].ioelt.data)
         # even number index for x values
-        gps_x = self.inputs["GPS_xy"].ioelt.data[0:int(len_list / 2 - 1)]
-        # odd number index for x values
-        gps_y = self.inputs["GPS_xy"].ioelt.data[int(len_list / 2):int(len_list - 1)]
+        gps_x = self.inputs["GPS_xy"].ioelt.data[0:int(len_list / 2 -1)]
+        
+        decalage = self.inputs["GPS_xy"].ioelt.data[len_list -1] # on récupère la valeur du décalage
+        for j in range(len(gps_x)):        
+            gps_x[j] = gps_x[j] - decalage
+        
+        
+        # odd number index for y values
+        gps_y = self.inputs["GPS_xy"].ioelt.data[int(len_list / 2 ):int(len_list - 2)]
         # add [x=0.0, y=0.0] (robot position) each time
         gps_x = [0.0, *gps_x]
         gps_y = [0.0, *gps_y]

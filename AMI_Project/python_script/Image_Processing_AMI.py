@@ -284,7 +284,7 @@ def process_img(image, model, model_sign, index):
         mask = add_mask(content, (100, 100), 100)
         output = cv2.add(content, np.zeros(np.shape(content), dtype=np.uint8), mask=mask)
 
-        # cv2.imwrite('C:/Users/GAO Xing/Desktop/RtMapsGit/Rtmaps_Autopilot_Project/AMI_Project/data/Test_' + str(index) + '.png', output)
+        # cv2.imwrite('C:/Users/26bap/Documents/transfert/Travail/ESIGELEC/PING UTAC/GitHub/Rtmaps_Autopilot_Project/AMI_Project/data/Test_' + str(index) + '.png', output)
         # index = index + 1
 
         detect_sign_img = np.asarray(output)
@@ -300,7 +300,7 @@ def process_img(image, model, model_sign, index):
         if probVal > threshold and 40 < y < 100:
             if classIndex < 3:
                 cv2.rectangle(image_temp, (tl[0] + 440, tl[1] + 50), (br[0] + 440, br[1] + 50), (255, 255, 0), 3)
-                cv2.imwrite('C:/Users/GAO Xing/Desktop/RtMapsGit/Rtmaps_Autopilot_Project/AMI_Project/data/sign_51_' + str(classIndex) + '_' + str(index) + '.png', output)
+                cv2.imwrite('C:/Users/26bap/Documents/transfert/Travail/ESIGELEC/PING UTAC/GitHub/Rtmaps_Autopilot_Project/AMI_Project/data/sign_51_' + str(classIndex) + '_' + str(index) + '.png', output)
                 index = index + 1
 
             if classIndex == 0:
@@ -416,9 +416,9 @@ class rtmaps_python(BaseComponent):
 
     def Birth(self):
         # TODO Calibration of AMI's camera
-        pickle_in = open("C:/Users/GAO Xing/Desktop/RtMapsGit/Rtmaps_Autopilot_Project/AMI_Project/models/road_trained_5.p", "rb")
+        pickle_in = open("C:/Users/26bap/Documents/transfert/Travail/ESIGELEC/PING UTAC/GitHub/Rtmaps_Autopilot_Project/AMI_Project/models/road_trained_5.p", "rb")
         self.model = pickle.load(pickle_in)
-        pickle_in = open("C:/Users/GAO Xing/Desktop/RtMapsGit/Rtmaps_Autopilot_Project/AMI_Project/models/sign_trained_s0.p", "rb")
+        pickle_in = open("C:/Users/26bap/Documents/transfert/Travail/ESIGELEC/PING UTAC/GitHub/Rtmaps_Autopilot_Project/AMI_Project/models/sign_trained_s0.p", "rb")
         self.model_sign = pickle.load(pickle_in)
         self.index = 0
 

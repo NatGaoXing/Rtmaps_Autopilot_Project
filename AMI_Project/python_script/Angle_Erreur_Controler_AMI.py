@@ -16,7 +16,7 @@ class rtmaps_python(BaseComponent):
         self.i = 0
         # self.multi = 1.2
         self.coefLine = 0
-        self.pid = PID(0.5, 0.0, 0.0, setpoint=0)
+        self.pid = PID(0.4, 0.0, 0.0, setpoint=0)
         self.pid.sample_time = 0.01
         self.pid.output_limits = (-180, 180)
 
@@ -26,6 +26,7 @@ class rtmaps_python(BaseComponent):
         self.add_input("Fin", rtmaps.types.ANY)
         self.add_output("Lat_cmd", rtmaps.types.AUTO)
         self.add_output("A", rtmaps.types.AUTO)
+        self.add_output("targetpoints", rtmaps.types.AUTO)
 
     def Birth(self):
         print("Python Birth")
@@ -36,15 +37,25 @@ class rtmaps_python(BaseComponent):
         X_list = self.inputs["TargetX"].ioelt.data
         Y_list = self.inputs["TargetY"].ioelt.data
         Fin = self.inputs["Fin"].ioelt.data
-
+        
+        radius = 5
+        
+        
         # if there is only one point (robot), we take the one in front of us
         if len(X_list) < 2:
             x = 0.0
             y = 1.0
         else:  # else we take the first one
-            x = X_list[1]
-            y = Y_list[1]
-
+            i = 0
+            try:
+                while (math.sqrt(X_list[i] ** 2 + Y_list[i] ** 2) < radius):
+                    i+=1
+            except:
+                i-=1
+                pass
+            x = X_list[i]
+            y = Y_list[i]
+        """
         # if there are enough points, we calculate the distance to the line formed by the two next
         if len(X_list) > 1:
             point_droite_1 = np.array([X_list[min(len(X_list) - 2, 3)], Y_list[min(len(X_list) - 2, 3)], 0.0])
@@ -52,10 +63,10 @@ class rtmaps_python(BaseComponent):
             point_to_process = np.array([0.0, 0.0, 0.0])
 
             distancePtLine = getDistancePoint2Line(point_droite_1, point_droite_2, point_to_process)
-        else:
-            distancePtLine = 0.0
+        else:"""
+            
         # sum of angle with next point and previous line
-        angle = math.atan2(-x, y) + distancePtLine * self.coefLine
+        angle = math.atan2(-x, y)# + distancePtLine * self.coefLine
 
         # apply pid
         command = self.pid(math.degrees(-angle))
@@ -80,6 +91,8 @@ class rtmaps_python(BaseComponent):
                 self.outputs["A"].write(-1)
             else:
                 self.outputs["A"].write(1)
+                
+        self.outputs["targetpoints"].write([y,-x,0.0])
 
     # Death() will be called once at diagram execution shutdown
     def Death(self):

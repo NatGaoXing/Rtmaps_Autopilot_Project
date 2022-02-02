@@ -865,8 +865,8 @@
     <Property LongName="Push_to_dodge_1.moveable" Type="0">true</Property>
     <Property LongName="Push_to_dodge_1.hidden" Type="0">false</Property>
     <Property LongName="Push_to_dodge_1.title" Type="3"><![CDATA[]]></Property>
-    <Property LongName="Push_to_dodge_1.x" Type="1">169</Property>
-    <Property LongName="Push_to_dodge_1.y" Type="1">510</Property>
+    <Property LongName="Push_to_dodge_1.x" Type="1">122</Property>
+    <Property LongName="Push_to_dodge_1.y" Type="1">539</Property>
     <Property LongName="Push_to_dodge_1.width" Type="1">90</Property>
     <Property LongName="Push_to_dodge_1.height" Type="1">60</Property>
     <Property LongName="Push_to_dodge_1.end_guard" Type="0" SubType="128">true</Property>
@@ -1059,8 +1059,8 @@
     <Property LongName="Simu_button.moveable" Type="0">true</Property>
     <Property LongName="Simu_button.hidden" Type="0">false</Property>
     <Property LongName="Simu_button.title" Type="3"><![CDATA[]]></Property>
-    <Property LongName="Simu_button.x" Type="1">170</Property>
-    <Property LongName="Simu_button.y" Type="1">570</Property>
+    <Property LongName="Simu_button.x" Type="1">89</Property>
+    <Property LongName="Simu_button.y" Type="1">672</Property>
     <Property LongName="Simu_button.width" Type="1">90</Property>
     <Property LongName="Simu_button.height" Type="1">60</Property>
     <Property LongName="Simu_button.end_guard" Type="0" SubType="128">true</Property>

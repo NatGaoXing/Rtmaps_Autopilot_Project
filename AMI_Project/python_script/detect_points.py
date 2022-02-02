@@ -22,9 +22,13 @@ def detect_points(array_in,bounding_box):
 	y_bound_max = -99.0
 	x_bound = 99.0
 	points = array_in.reshape(int(np.size(array_in)/3),3)
-	points_size = np.size(points, axis=0)	
+	points_size = np.size(points, axis=0)
+	points_in_bound = [0.0, 0.0, 0.0]
 	for i in range(0,points_size):
 		if points[i,0] > x_min and points[i,0] < x_max and points[i,1] > y_min and points[i,1] < y_max and points[i,2] > z_min and points[i,2] < z_max:
+			points_in_bound.append(points[i,0])
+			points_in_bound.append(points[i,1])
+			points_in_bound.append(points[i,2])
 			if points[i,0] < x_bound:
 				x_bound = points[i,0]
 			if points[i,1] < y_bound_min:
@@ -35,7 +39,7 @@ def detect_points(array_in,bounding_box):
 			if braking > 1:
 				braking = 1	
 	
-	return float(braking), y_bound_min, y_bound_max, x_bound
+	return float(braking), y_bound_min, y_bound_max, x_bound, points_in_bound
 
 
 # Python class that will be called from RTMaps.
@@ -47,16 +51,14 @@ class rtmaps_python(BaseComponent):
         self.add_input("in", rtmaps.types.ANY) # define input
         self.add_input("Dodge_1_Stop_0", rtmaps.types.ANY) # define input
         self.add_output("out", rtmaps.types.AUTO) # define output
-        #self.add_output("acc_out", rtmaps.types.AUTO) # define output
         self.add_output("decalage_out", rtmaps.types.AUTO) # define output
         self.add_output("obstacle_out", rtmaps.types.AUTO) # define output
+        self.add_output("points_in_bound_right_out", rtmaps.types.AUTO,10000) # define output
+        self.add_output("points_in_bound_front_out", rtmaps.types.AUTO,10000) # define output
 
 # Birth() will be called once at diagram execution startup
     def Birth(self):
         self.outputs["out"].write(0.0)
-        #self.outputs["acc_out"].write(0.25)
-        #self.outputs["y_bound_min_out"].write(0.0) # and write it to the output
-        #self.outputs["y_bound_max_out"].write(0.0) # and write it to the output
         self.t_obstacle = 0
         self.y_bound_decal = 0
         self.obstacle = 0
@@ -69,8 +71,8 @@ class rtmaps_python(BaseComponent):
         array_in = np.array(input_array) #[ligne,colonne]
         bounding_box = np.array([[0,10],[-2.,2.],[-1,2]])
         bounding_box_right = np.array([[-3,5],[-5,-1],[-1,2]])
-        out_right, y_bound_min_out, y_bound_max_out, x_bound_out = detect_points(array_in,bounding_box_right)
-        out, y_bound_min_out, y_bound_max_out, x_bound_out = detect_points(array_in,bounding_box)
+        out_right, y_bound_min_out, y_bound_max_out, x_bound_out, points_in_bound_right = detect_points(array_in,bounding_box_right)
+        out, y_bound_min_out, y_bound_max_out, x_bound_out, points_in_bound_front = detect_points(array_in,bounding_box)
 		
         if out > 0:
         	obstacle_in_bound = 1.0
@@ -90,7 +92,7 @@ class rtmaps_python(BaseComponent):
             self.t_obstacle = time.time()
             if y_bound_max_out - y_bound_min_out > self.y_bound_decal :
                 self.y_bound_decal = y_bound_max_out - y_bound_min_out
-                #print(self.y_bound_decal)
+                print(self.y_bound_decal)
             
         if (out_right > 0.0 and self.obstacle == 1):
             self.obstacle = 1.
@@ -108,9 +110,10 @@ class rtmaps_python(BaseComponent):
 		#end of old change coordinates
 		
         self.outputs["out"].write(out) # and write it to the output
-        #self.outputs["acc_out"].write(0.2-out) # and write it to the output
         self.outputs["decalage_out"].write(decalage) # and write it to the output
         self.outputs["obstacle_out"].write(self.obstacle) # and write it to the output
+        self.outputs["points_in_bound_right_out"].write(points_in_bound_right) # and write it to the output
+        self.outputs["points_in_bound_front_out"].write(points_in_bound_front) # and write it to the output
 		
         
 

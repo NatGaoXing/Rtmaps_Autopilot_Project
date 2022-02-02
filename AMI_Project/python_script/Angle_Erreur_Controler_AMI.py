@@ -16,7 +16,7 @@ class rtmaps_python(BaseComponent):
         self.i = 0
         # self.multi = 1.2
         self.coefLine = 0
-        self.pid = PID(0.4, 0.0, 0.0, setpoint=0)
+        self.pid = PID(0.7, 0.0, 0.0, setpoint=0)
         self.pid.sample_time = 0.01
         self.pid.output_limits = (-180, 180)
 

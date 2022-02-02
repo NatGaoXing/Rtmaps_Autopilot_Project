@@ -27,8 +27,8 @@ class rtmaps_python(BaseComponent):
 
 # Core() is called every time you have a new input
     def Core(self):
-        max_speed = 15.
-        maneuver_speed = 5.
+        max_speed = 30.
+        maneuver_speed = 10.
         input = self.inputs["obstacle_info"].ioelt # create an ioelt from the input
         breakval = input.data[0]
         is_obstacle = input.data[1]

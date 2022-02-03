@@ -19,12 +19,10 @@ class rtmaps_python(BaseComponent):
 
     def Dynamic(self):
         self.add_input("dataRobot", rtmaps.types.AUTO)
-        self.add_input("stop", rtmaps.types.AUTO)
         self.add_output("targetX", rtmaps.types.AUTO, 4)
         self.add_output("targetY", rtmaps.types.AUTO, 4)
         self.add_output("targetXY", rtmaps.types.AUTO, 1000)
         
-        self.add_output("fin", rtmaps.types.AUTO)
 
     def Birth(self):
         print("Python Birth")
@@ -32,7 +30,6 @@ class rtmaps_python(BaseComponent):
         self.t_obstacle=0
         self.y_bound_decal = 0
 
-        self.outputs["fin"].write(0)
 
     def Core(self):
         # Trajectory Read
@@ -44,11 +41,7 @@ class rtmaps_python(BaseComponent):
         UTM_Y = self.inputs["dataRobot"].ioelt.data[2]
         yaw = self.inputs["dataRobot"].ioelt.data[0]
 
-        # Fix bc sometimes the first stop info is sent too late
-        try:
-            stop = self.inputs["stop"].ioelt.data
-        except:
-            stop = 0
+
 
         # Transition Matrix creation
         H_src = np.eye(4)
@@ -68,22 +61,16 @@ class rtmaps_python(BaseComponent):
             list_x.append(pointMonde[1])
             
             
-        # Management of an obstacle
-        if stop == 1:
-            print("Obstacle !")
-            self.outputs["fin"].write(1)
-            time.sleep(2)
-        elif self.i < len(list_x) - 1:
-            self.outputs["fin"].write(0)
+
 
         # If we are close to the targeted point or the one after.
         if list_y[self.i]<1 or math.sqrt((list_x[self.i]) ** 2 + (list_y[self.i]) ** 2) < 2.5 or math.sqrt((list_x[min(self.i + 1, len(list_x) - 1)]) ** 2 + (list_y[min(self.i + 1, len(list_x) - 1)]) ** 2) < 2.5: #comparaison avec nouvelle liste x_test
             # And not at the end, we move forward in the list
             if self.i < len(list_x) - 2:
-                self.i = self.i + 1
-            # If we're at the end, we stop
+                self.i += 1
+            # If we're at the end, do nothing
             else:
-                self.outputs["fin"].write(1)
+                None
         # output the 4 next points
         
         self.outputs["targetX"].write(list_x[self.i:self.i + 4])  # and write it to the output !!!new list x_test!!!

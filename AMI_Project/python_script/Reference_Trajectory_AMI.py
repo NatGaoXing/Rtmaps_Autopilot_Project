@@ -144,9 +144,6 @@ def calc_spline_course(x, y, ds=0.1):
 
 
 class rtmaps_python(BaseComponent):
-    """
-    Generate a reference trajectory, <Spline>
-    """
     def __init__(self):
         BaseComponent.__init__(self)
         self.runtime = 0
@@ -162,8 +159,6 @@ class rtmaps_python(BaseComponent):
         self.add_output("ref_y", rtmaps.types.AUTO, 1000)
         # output: list of Y values
         self.add_output("ref_x", rtmaps.types.AUTO, 1000)
-        # output: list of Yaw values
-        self.add_output("ref_yaw", rtmaps.types.AUTO, 1000)
         self.add_output("viewer", rtmaps.types.AUTO, 1000)
 
     def Birth(self):
@@ -172,29 +167,29 @@ class rtmaps_python(BaseComponent):
     def Core(self):
         # dimension of the list
         len_list = len(self.inputs["GPS_xy"].ioelt.data)
-        # even number index for x values
+        # x values are the first half of the input
         gps_x = self.inputs["GPS_xy"].ioelt.data[0:int(len_list / 2 -1)]
-        
-        decalage = self.inputs["GPS_xy"].ioelt.data[len_list -1] # on récupère la valeur du décalage
+        decalage = self.inputs["GPS_xy"].ioelt.data[len_list -1] # use the value from detect points to decal the trajectory and dodge the obsatcle
         for j in range(len(gps_x)):        
             gps_x[j] = gps_x[j] - decalage
-        
-        
-        # odd number index for y values
+
+        # y values are the second half of the input
         gps_y = self.inputs["GPS_xy"].ioelt.data[int(len_list / 2 ):int(len_list - 2)]
         # add [x=0.0, y=0.0] (robot position) each time
         gps_x = [0.0, *gps_x]
         gps_y = [0.0, *gps_y]
-        # when the robot reach the end, add a point in the middle of robot and the goal to have better performance
+        # when the robot reaches the end, add a point in the middle of robot in order to have better performance
         if len(gps_y) < 2:
             gps_x = [0.0, *gps_x]
             gps_y = [0.5, *gps_y]
-        # calculate a reference trajectory
+        #calculate a reference trajectory
         ref_x, ref_y, ref_yaw, ref_k, s = calc_spline_course(gps_x, gps_y, ds=self.dt)
 
+        #write the reference trajectory
         self.outputs["ref_x"].write(ref_x)
         self.outputs["ref_y"].write(ref_y)
-        self.outputs["ref_yaw"].write(ref_yaw)
+
+        #create an input to display the refernce trajectory
         gps_xy = []
         for i in range(len(ref_x)):
             gps_xy.append(ref_y[i])

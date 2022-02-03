@@ -164,17 +164,15 @@ def add_mask(img, p, r):
 
 
 def detect_circles_demo(image):
-    dst = cv2.pyrMeanShiftFiltering(image, 10, 100)  # 边缘保留滤波EPF
-    cimage = cv2.cvtColor(dst, cv2.COLOR_RGB2GRAY)
+    dst = cv2.pyrMeanShiftFiltering(image, 10, 100)
+    c_image = cv2.cvtColor(dst, cv2.COLOR_RGB2GRAY)
 
     circles_detected = []
 
     try:
-        circles = cv2.HoughCircles(cimage, cv2.HOUGH_GRADIENT, 1, 20, param1=50, param2=30, minRadius=7, maxRadius=35)  # 40
-        circles = np.uint16(np.around(circles))  # 把circles包含的圆心和半径的值变成整数
+        circles = cv2.HoughCircles(c_image, cv2.HOUGH_GRADIENT, 1, 20, param1=50, param2=30, minRadius=7, maxRadius=35)
+        circles = np.uint16(np.around(circles))
         for i in circles[0, :]:
-            # cv2.circle(image, (i[0], i[1]), i[2], (255, 255, 0), 2)  # 画圆
-            # cv2.circle(image, (i[0], i[1]), 2, (255, 255, 0), 2)  # 画圆心
             circles_detected.append([i[0], i[1], i[2]])
     except:
         pass
@@ -283,8 +281,6 @@ def process_img(image, model, model_sign, index):
 
         mask = add_mask(content, (100, 100), 100)
         output = cv2.add(content, np.zeros(np.shape(content), dtype=np.uint8), mask=mask)
-
-        # cv2.imwrite('C:/Users/26bap/Documents/transfert/Travail/ESIGELEC/PING UTAC/GitHub/Rtmaps_Autopilot_Project/AMI_Project/data/Test_' + str(index) + '.png', output)
         # index = index + 1
 
         detect_sign_img = np.asarray(output)
@@ -300,15 +296,15 @@ def process_img(image, model, model_sign, index):
         if probVal > threshold and 40 < y < 100:
             if classIndex < 3:
                 cv2.rectangle(image_temp, (tl[0] + 440, tl[1] + 50), (br[0] + 440, br[1] + 50), (255, 255, 0), 3)
-                cv2.imwrite('C:/Users/26bap/Documents/transfert/Travail/ESIGELEC/PING UTAC/GitHub/Rtmaps_Autopilot_Project/AMI_Project/data/sign_51_' + str(classIndex) + '_' + str(index) + '.png', output)
+                # cv2.imwrite('C:/Users/GAO Xing/Desktop/RtMapsGit/Rtmaps_Autopilot_Project/AMI_Project/data/sign_51_' + str(classIndex) + '_' + str(index) + '.png', output)
                 index = index + 1
 
             if classIndex == 0:
-                cv2.putText(image_temp, "Speed limit : 30", (5, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (255, 255, 255), 2)
+                cv2.putText(image_temp, "Speed limit : 30", (5, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 255, 0), 2)
             elif classIndex == 1:
-                cv2.putText(image_temp, "Speed limit : 60", (5, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (255, 255, 255), 2)
+                cv2.putText(image_temp, "Speed limit : 60", (5, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 255, 0), 2)
             elif classIndex == 2:
-                cv2.putText(image_temp, "Speed limit : 90", (5, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (255, 255, 255), 2)
+                cv2.putText(image_temp, "Speed limit : 90", (5, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 255, 0), 2)
 
     cv2.imshow('Detection', image_temp)
 
@@ -416,9 +412,9 @@ class rtmaps_python(BaseComponent):
 
     def Birth(self):
         # TODO Calibration of AMI's camera
-        pickle_in = open("C:/Users/26bap/Documents/transfert/Travail/ESIGELEC/PING UTAC/GitHub/Rtmaps_Autopilot_Project/AMI_Project/models/road_trained_5.p", "rb")
+        pickle_in = open("C:/Users/GAO Xing/Desktop/RtMapsGit/Rtmaps_Autopilot_Project-main/AMI_Project/AMI_Project/models/road_trained_5.p", "rb")
         self.model = pickle.load(pickle_in)
-        pickle_in = open("C:/Users/26bap/Documents/transfert/Travail/ESIGELEC/PING UTAC/GitHub/Rtmaps_Autopilot_Project/AMI_Project/models/sign_trained_s0.p", "rb")
+        pickle_in = open("C:/Users/GAO Xing/Desktop/RtMapsGit/Rtmaps_Autopilot_Project-main/AMI_Project/AMI_Project/models/sign_trained_s0.p", "rb")
         self.model_sign = pickle.load(pickle_in)
         self.index = 0
 

@@ -14,7 +14,7 @@ from queue import Empty
 
 from openpyxl import Workbook, load_workbook
 
-CARLA_PYTHON_DIRECTORY = "C:/Users/Nicolas/Documents/UTAC Local/CARLA 0_9_11/PythonAPI"
+CARLA_PYTHON_DIRECTORY = "C:/Users/GAO Xing/Desktop/CARLA_0.9.11/WindowsNoEditor/PythonAPI"
 
 try:
     sys.path.append(glob.glob('../carla/dist/carla-*%d.%d-%s.egg' % (
@@ -198,10 +198,10 @@ class rtmaps_python(BaseComponent):
 
                 self.world = World(self.client.get_world(), self.hud, carPose, args)
                 
-                #SPAWN OBJECT to detect
-                for i in range(0,20):
+                # SPAWN OBJECT to detect
+                for i in range(0, 5):
                     transform = carla.Transform(carla.Location(x=229.5, y=100+i, z=1), carla.Rotation(yaw=0)) 
-                    self.actor = self.world.world.spawn_actor(self.world.world.get_blueprint_library().filter("busstop")[0], transform)
+                    self.actor = self.world.world.spawn_actor(self.world.world.get_blueprint_library().filter("box03")[0], transform)
 
                 self.controller = KeyboardControl(self.world, False)
 

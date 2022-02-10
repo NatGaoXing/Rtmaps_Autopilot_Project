@@ -9,6 +9,8 @@ import numpy as np
 import bisect
 
 
+# Cubic spline planner Atsushi Sakai(@Atsushi_twi)
+# https://github.com/AtsushiSakai
 class Spline:
     def __init__(self, x, y):
         self.b, self.c, self.d, self.w = [], [], [], []

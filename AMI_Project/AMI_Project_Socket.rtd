@@ -25,51 +25,6 @@
   <ClocksManagement>
     <Property LongName="ClocksManagement.activeClock" Type="4"><![CDATA[1|0|RTMaps_standard_clock]]></Property>
   </ClocksManagement>
-  <Component InstanceName="Angle_Erreur_Controler" Model="PythonBridge" Version="3.2.0" x="1488" y="560" z="0">
-    <Input LongName="Angle_Erreur_Controler.TargetY" Name="TargetY">
-      <Property LongName="Angle_Erreur_Controler.TargetY.readerType" Type="1">0</Property>
-      <Property LongName="Angle_Erreur_Controler.TargetY.subsampling" Type="1">1</Property>
-    </Input>
-    <Input LongName="Angle_Erreur_Controler.TargetX" Name="TargetX">
-      <Property LongName="Angle_Erreur_Controler.TargetX.readerType" Type="1">4</Property>
-      <Property LongName="Angle_Erreur_Controler.TargetX.subsampling" Type="1">1</Property>
-    </Input>
-    <Output LongName="Angle_Erreur_Controler.Lat_cmd" Name="Lat_cmd">
-      <Property LongName="Angle_Erreur_Controler.Lat_cmd.subsampling" Type="1">1</Property>
-      <Property LongName="Angle_Erreur_Controler.Lat_cmd.fifosize" Type="1">16</Property>
-      <Property LongName="Angle_Erreur_Controler.Lat_cmd.periodic" Type="0">false</Property>
-    </Output>
-    <Output LongName="Angle_Erreur_Controler.targetpoints" Name="targetpoints">
-      <Property LongName="Angle_Erreur_Controler.targetpoints.subsampling" Type="1">1</Property>
-      <Property LongName="Angle_Erreur_Controler.targetpoints.fifosize" Type="1">16</Property>
-      <Property LongName="Angle_Erreur_Controler.targetpoints.periodic" Type="0">false</Property>
-    </Output>
-    <Property LongName="Angle_Erreur_Controler.guard_begin" Type="0" SubType="128">true</Property>
-    <Property LongName="Angle_Erreur_Controler.internalInputs" Type="3" SubType="128"><![CDATA[TargetY;1==#TargetX;1==]]></Property>
-    <Property LongName="Angle_Erreur_Controler.internalOutputs" Type="3" SubType="128"><![CDATA[Lat_cmd;0==;0#targetpoints;0==;0]]></Property>
-    <Property LongName="Angle_Erreur_Controler.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
-    <ReadOnlyProperty LongName="Angle_Erreur_Controler.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
-    <Property LongName="Angle_Erreur_Controler.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
-    <Property LongName="Angle_Erreur_Controler.logDebug" Type="0">false</Property>
-    <Property LongName="Angle_Erreur_Controler.showTracebackInConsole" Type="0">true</Property>
-    <Property LongName="Angle_Erreur_Controler.autoReloadSubModules" Type="0">true</Property>
-    <Property LongName="Angle_Erreur_Controler.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="Angle_Erreur_Controler.pythonPID" Type="1">14516</ReadOnlyProperty>
-    <Property LongName="Angle_Erreur_Controler.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
-    <ReadOnlyProperty LongName="Angle_Erreur_Controler.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="Angle_Erreur_Controler.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
-    <Property LongName="Angle_Erreur_Controler.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[]]></Property>
-    <Property LongName="Angle_Erreur_Controler.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/GAO Xing/RTMaps-4.0/python_log/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../../RTMaps-4.0/python_log]]></Relative></Property>
-    <Property LongName="Angle_Erreur_Controler.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="Angle_Erreur_Controler.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/GAO Xing/Desktop/RtMapsGit/Rtmaps_Autopilot_Project-main/AMI_Project/AMI_Project/python_script/Angle_Erreur_Controler_AMI.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/python_script/Angle_Erreur_Controler_AMI.py]]></Relative></Property>
-    <Property LongName="Angle_Erreur_Controler.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
-    <ReadOnlyProperty LongName="Angle_Erreur_Controler.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="Angle_Erreur_Controler.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
-    <ReadOnlyProperty LongName="Angle_Erreur_Controler.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
-    <Property LongName="Angle_Erreur_Controler.threaded" Type="0">true</Property>
-    <Property LongName="Angle_Erreur_Controler.priority" Type="1">128</Property>
-    <Property LongName="Angle_Erreur_Controler.autoStart" Type="0">true</Property>
-  </Component>
   <Component InstanceName="Brake_converter" Model="numbers_converter" Version="1.1.3" x="280" y="176" z="0">
     <Input LongName="Brake_converter.input" Name="input">
       <Property LongName="Brake_converter.input.readerType" Type="1">0</Property>
@@ -115,7 +70,7 @@
     <Property LongName="Change_Coordinates.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Change_Coordinates.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Change_Coordinates.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="Change_Coordinates.pythonPID" Type="1">7568</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Change_Coordinates.pythonPID" Type="1">10812</ReadOnlyProperty>
     <Property LongName="Change_Coordinates.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Change_Coordinates.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Change_Coordinates.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -177,7 +132,7 @@
     <Property LongName="data_vectorizer_1.priority" Type="1">128</Property>
     <Property LongName="data_vectorizer_1.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="detect_points_1" Model="PythonBridge" Version="3.2.0" x="920" y="288" z="0">
+  <Component InstanceName="detect_points_1" Model="PythonBridge" Version="3.2.0" x="912" y="144" z="0">
     <Input LongName="detect_points_1.in" Name="in">
       <Property LongName="detect_points_1.in.readerType" Type="1">0</Property>
       <Property LongName="detect_points_1.in.subsampling" Type="1">1</Property>
@@ -221,7 +176,7 @@
     <Property LongName="detect_points_1.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="detect_points_1.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="detect_points_1.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="detect_points_1.pythonPID" Type="1">16888</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="detect_points_1.pythonPID" Type="1">10288</ReadOnlyProperty>
     <Property LongName="detect_points_1.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="detect_points_1.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="detect_points_1.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -237,7 +192,7 @@
     <Property LongName="detect_points_1.priority" Type="1">128</Property>
     <Property LongName="detect_points_1.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="Front_Camera" Model="ImageViewer" Version="1.23.2" x="1720" y="184" z="0">
+  <Component InstanceName="Front_Camera" Model="ImageViewer" Version="1.23.2" x="1720" y="-16" z="0">
     <Input LongName="Front_Camera.input" Name="input">
       <Property LongName="Front_Camera.input.readerType" Type="1">2</Property>
       <Property LongName="Front_Camera.input.subsampling" Type="1">1</Property>
@@ -277,7 +232,7 @@
     <Property LongName="Front_Camera.priority" Type="1">128</Property>
     <Property LongName="Front_Camera.autoStart" Type="0">false</Property>
   </Component>
-  <Component InstanceName="Image_Processing" Model="PythonBridge" Version="3.2.0" x="776" y="184" z="0">
+  <Component InstanceName="Image_Processing" Model="PythonBridge" Version="3.2.0" x="912" y="48" z="0">
     <Input LongName="Image_Processing.in" Name="in">
       <Property LongName="Image_Processing.in.readerType" Type="1">0</Property>
       <Property LongName="Image_Processing.in.subsampling" Type="1">1</Property>
@@ -297,7 +252,7 @@
     <Property LongName="Image_Processing.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Image_Processing.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Image_Processing.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="Image_Processing.pythonPID" Type="1">8368</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Image_Processing.pythonPID" Type="1">11724</ReadOnlyProperty>
     <Property LongName="Image_Processing.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Image_Processing.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Image_Processing.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -347,7 +302,7 @@
     <Property LongName="is_auto_pilot.priority" Type="1">128</Property>
     <Property LongName="is_auto_pilot.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="is_auto_pilot_converter" Model="numbers_converter" Version="1.1.3" x="248" y="-96" z="0">
+  <Component InstanceName="is_auto_pilot_converter" Model="numbers_converter" Version="1.1.3" x="280" y="-96" z="0">
     <Input LongName="is_auto_pilot_converter.input" Name="input">
       <Property LongName="is_auto_pilot_converter.input.readerType" Type="1">0</Property>
       <Property LongName="is_auto_pilot_converter.input.subsampling" Type="1">1</Property>
@@ -412,7 +367,7 @@
     <Property LongName="is_reverse_0.priority" Type="1">128</Property>
     <Property LongName="is_reverse_0.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="is_reverse_converter" Model="numbers_converter" Version="1.1.3" x="248" y="-8" z="0">
+  <Component InstanceName="is_reverse_converter" Model="numbers_converter" Version="1.1.3" x="280" y="-8" z="0">
     <Input LongName="is_reverse_converter.input" Name="input">
       <Property LongName="is_reverse_converter.input.readerType" Type="1">0</Property>
       <Property LongName="is_reverse_converter.input.subsampling" Type="1">1</Property>
@@ -427,7 +382,52 @@
     <Property LongName="is_reverse_converter.priority" Type="1">128</Property>
     <Property LongName="is_reverse_converter.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="Lidar" Model="GL2_3D_Viewer" Version="1.56.1" x="1720" y="0" z="0">
+  <Component InstanceName="Lateral_Controller" Model="PythonBridge" Version="3.2.0" x="1488" y="568" z="0">
+    <Input LongName="Lateral_Controller.TargetY" Name="TargetY">
+      <Property LongName="Lateral_Controller.TargetY.readerType" Type="1">0</Property>
+      <Property LongName="Lateral_Controller.TargetY.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="Lateral_Controller.TargetX" Name="TargetX">
+      <Property LongName="Lateral_Controller.TargetX.readerType" Type="1">4</Property>
+      <Property LongName="Lateral_Controller.TargetX.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="Lateral_Controller.Lat_cmd" Name="Lat_cmd">
+      <Property LongName="Lateral_Controller.Lat_cmd.subsampling" Type="1">1</Property>
+      <Property LongName="Lateral_Controller.Lat_cmd.fifosize" Type="1">16</Property>
+      <Property LongName="Lateral_Controller.Lat_cmd.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Lateral_Controller.targetpoints" Name="targetpoints">
+      <Property LongName="Lateral_Controller.targetpoints.subsampling" Type="1">1</Property>
+      <Property LongName="Lateral_Controller.targetpoints.fifosize" Type="1">16</Property>
+      <Property LongName="Lateral_Controller.targetpoints.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Lateral_Controller.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="Lateral_Controller.internalInputs" Type="3" SubType="128"><![CDATA[TargetY;1==#TargetX;1==]]></Property>
+    <Property LongName="Lateral_Controller.internalOutputs" Type="3" SubType="128"><![CDATA[Lat_cmd;0==;0#targetpoints;0==;0]]></Property>
+    <Property LongName="Lateral_Controller.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="Lateral_Controller.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="Lateral_Controller.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="Lateral_Controller.logDebug" Type="0">false</Property>
+    <Property LongName="Lateral_Controller.showTracebackInConsole" Type="0">true</Property>
+    <Property LongName="Lateral_Controller.autoReloadSubModules" Type="0">true</Property>
+    <Property LongName="Lateral_Controller.memorySize" Type="1">10000000</Property>
+    <ReadOnlyProperty LongName="Lateral_Controller.pythonPID" Type="1">8276</ReadOnlyProperty>
+    <Property LongName="Lateral_Controller.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="Lateral_Controller.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Lateral_Controller.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="Lateral_Controller.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[]]></Property>
+    <Property LongName="Lateral_Controller.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/GAO Xing/RTMaps-4.0/python_log/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../../RTMaps-4.0/python_log]]></Relative></Property>
+    <Property LongName="Lateral_Controller.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="Lateral_Controller.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/GAO Xing/Desktop/RtMapsGit/Rtmaps_Autopilot_Project-main/AMI_Project/AMI_Project/python_script/Angle_Erreur_Controler_AMI.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/python_script/Angle_Erreur_Controler_AMI.py]]></Relative></Property>
+    <Property LongName="Lateral_Controller.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
+    <ReadOnlyProperty LongName="Lateral_Controller.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Lateral_Controller.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Lateral_Controller.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="Lateral_Controller.threaded" Type="0">true</Property>
+    <Property LongName="Lateral_Controller.priority" Type="1">128</Property>
+    <Property LongName="Lateral_Controller.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Lidar" Model="GL2_3D_Viewer" Version="1.56.1" x="1720" y="96" z="0">
     <Input LongName="Lidar.object_0_data" Name="object_0_data">
       <Property LongName="Lidar.object_0_data.readerType" Type="1">2</Property>
       <Property LongName="Lidar.object_0_data.subsampling" Type="1">1</Property>
@@ -596,51 +596,51 @@
     <Property LongName="Lidar.priority" Type="1">128</Property>
     <Property LongName="Lidar.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="Longi_Speed" Model="PythonBridge" Version="3.2.0" x="1488" y="448" z="0">
-    <Input LongName="Longi_Speed.TargetY" Name="TargetY">
-      <Property LongName="Longi_Speed.TargetY.readerType" Type="1">0</Property>
-      <Property LongName="Longi_Speed.TargetY.subsampling" Type="1">1</Property>
+  <Component InstanceName="Longi_Speed_Controller" Model="PythonBridge" Version="3.2.0" x="1488" y="448" z="0">
+    <Input LongName="Longi_Speed_Controller.TargetY" Name="TargetY">
+      <Property LongName="Longi_Speed_Controller.TargetY.readerType" Type="1">0</Property>
+      <Property LongName="Longi_Speed_Controller.TargetY.subsampling" Type="1">1</Property>
     </Input>
-    <Input LongName="Longi_Speed.TargetX" Name="TargetX">
-      <Property LongName="Longi_Speed.TargetX.readerType" Type="1">4</Property>
-      <Property LongName="Longi_Speed.TargetX.subsampling" Type="1">1</Property>
+    <Input LongName="Longi_Speed_Controller.TargetX" Name="TargetX">
+      <Property LongName="Longi_Speed_Controller.TargetX.readerType" Type="1">4</Property>
+      <Property LongName="Longi_Speed_Controller.TargetX.subsampling" Type="1">1</Property>
     </Input>
-    <Input LongName="Longi_Speed.obstacle_info" Name="obstacle_info">
-      <Property LongName="Longi_Speed.obstacle_info.readerType" Type="1">4</Property>
-      <Property LongName="Longi_Speed.obstacle_info.subsampling" Type="1">1</Property>
+    <Input LongName="Longi_Speed_Controller.obstacle_info" Name="obstacle_info">
+      <Property LongName="Longi_Speed_Controller.obstacle_info.readerType" Type="1">4</Property>
+      <Property LongName="Longi_Speed_Controller.obstacle_info.subsampling" Type="1">1</Property>
     </Input>
-    <Output LongName="Longi_Speed.speed" Name="speed">
-      <Property LongName="Longi_Speed.speed.subsampling" Type="1">1</Property>
-      <Property LongName="Longi_Speed.speed.fifosize" Type="1">16</Property>
-      <Property LongName="Longi_Speed.speed.periodic" Type="0">false</Property>
+    <Output LongName="Longi_Speed_Controller.speed" Name="speed">
+      <Property LongName="Longi_Speed_Controller.speed.subsampling" Type="1">1</Property>
+      <Property LongName="Longi_Speed_Controller.speed.fifosize" Type="1">16</Property>
+      <Property LongName="Longi_Speed_Controller.speed.periodic" Type="0">false</Property>
     </Output>
-    <Property LongName="Longi_Speed.guard_begin" Type="0" SubType="128">true</Property>
-    <Property LongName="Longi_Speed.internalInputs" Type="3" SubType="128"><![CDATA[TargetY;1==#TargetX;1==#obstacle_info;1==]]></Property>
-    <Property LongName="Longi_Speed.internalOutputs" Type="3" SubType="128"><![CDATA[speed;0==;0]]></Property>
-    <Property LongName="Longi_Speed.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
-    <ReadOnlyProperty LongName="Longi_Speed.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
-    <Property LongName="Longi_Speed.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
-    <Property LongName="Longi_Speed.logDebug" Type="0">false</Property>
-    <Property LongName="Longi_Speed.showTracebackInConsole" Type="0">true</Property>
-    <Property LongName="Longi_Speed.autoReloadSubModules" Type="0">true</Property>
-    <Property LongName="Longi_Speed.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="Longi_Speed.pythonPID" Type="1">11668</ReadOnlyProperty>
-    <Property LongName="Longi_Speed.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
-    <ReadOnlyProperty LongName="Longi_Speed.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="Longi_Speed.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
-    <Property LongName="Longi_Speed.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[]]></Property>
-    <Property LongName="Longi_Speed.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/GAO Xing/RTMaps-4.0/python_log/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../../RTMaps-4.0/python_log]]></Relative></Property>
-    <Property LongName="Longi_Speed.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="Longi_Speed.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/GAO Xing/Desktop/RtMapsGit/Rtmaps_Autopilot_Project-main/AMI_Project/AMI_Project/python_script/Longi_Speed_AMI.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/python_script/Longi_Speed_AMI.py]]></Relative></Property>
-    <Property LongName="Longi_Speed.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
-    <ReadOnlyProperty LongName="Longi_Speed.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="Longi_Speed.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
-    <ReadOnlyProperty LongName="Longi_Speed.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
-    <Property LongName="Longi_Speed.threaded" Type="0">true</Property>
-    <Property LongName="Longi_Speed.priority" Type="1">128</Property>
-    <Property LongName="Longi_Speed.autoStart" Type="0">true</Property>
+    <Property LongName="Longi_Speed_Controller.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="Longi_Speed_Controller.internalInputs" Type="3" SubType="128"><![CDATA[TargetY;1==#TargetX;1==#obstacle_info;1==]]></Property>
+    <Property LongName="Longi_Speed_Controller.internalOutputs" Type="3" SubType="128"><![CDATA[speed;0==;0]]></Property>
+    <Property LongName="Longi_Speed_Controller.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="Longi_Speed_Controller.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="Longi_Speed_Controller.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="Longi_Speed_Controller.logDebug" Type="0">false</Property>
+    <Property LongName="Longi_Speed_Controller.showTracebackInConsole" Type="0">true</Property>
+    <Property LongName="Longi_Speed_Controller.autoReloadSubModules" Type="0">true</Property>
+    <Property LongName="Longi_Speed_Controller.memorySize" Type="1">10000000</Property>
+    <ReadOnlyProperty LongName="Longi_Speed_Controller.pythonPID" Type="1">13228</ReadOnlyProperty>
+    <Property LongName="Longi_Speed_Controller.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="Longi_Speed_Controller.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Longi_Speed_Controller.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="Longi_Speed_Controller.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[]]></Property>
+    <Property LongName="Longi_Speed_Controller.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/GAO Xing/RTMaps-4.0/python_log/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../../RTMaps-4.0/python_log]]></Relative></Property>
+    <Property LongName="Longi_Speed_Controller.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="Longi_Speed_Controller.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/GAO Xing/Desktop/RtMapsGit/Rtmaps_Autopilot_Project-main/AMI_Project/AMI_Project/python_script/Longi_Speed_AMI.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/python_script/Longi_Speed_AMI.py]]></Relative></Property>
+    <Property LongName="Longi_Speed_Controller.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
+    <ReadOnlyProperty LongName="Longi_Speed_Controller.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Longi_Speed_Controller.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Longi_Speed_Controller.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="Longi_Speed_Controller.threaded" Type="0">true</Property>
+    <Property LongName="Longi_Speed_Controller.priority" Type="1">128</Property>
+    <Property LongName="Longi_Speed_Controller.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="Offset" Model="vectors_scale_and_offset" Version="1.1.2" x="776" y="288" z="0">
+  <Component InstanceName="Offset" Model="vectors_scale_and_offset" Version="1.1.2" x="848" y="144" z="0">
     <Input LongName="Offset.input" Name="input">
       <Property LongName="Offset.input.readerType" Type="1">0</Property>
       <Property LongName="Offset.input.subsampling" Type="1">1</Property>
@@ -691,7 +691,7 @@
     <Property LongName="Push_to_dodge_1.priority" Type="1">128</Property>
     <Property LongName="Push_to_dodge_1.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="RecFile_1" Model="RecFile" Version="2.16.0" x="-152" y="232" z="0">
+  <Component InstanceName="RecFile_1" Model="RecFile" Version="2.16.0" x="16" y="232" z="0">
     <Input LongName="RecFile_1.SocketReceiver_1.position_f64_LatitudeDeg_LongitudeDeg_AltitudeRef_AltitudeM.input" Name="input">
       <Property LongName="RecFile_1.SocketReceiver_1.position_f64_LatitudeDeg_LongitudeDeg_AltitudeRef_AltitudeM.input.readerType" Type="1">0</Property>
       <Property LongName="RecFile_1.SocketReceiver_1.position_f64_LatitudeDeg_LongitudeDeg_AltitudeRef_AltitudeM.input.subsampling" Type="1">1</Property>
@@ -784,7 +784,7 @@
     <Property LongName="Recorder.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Recorder.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Recorder.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="Recorder.pythonPID" Type="1">12084</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Recorder.pythonPID" Type="1">4484</ReadOnlyProperty>
     <Property LongName="Recorder.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Recorder.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Recorder.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -830,7 +830,7 @@
     <Property LongName="Reference_Trajectory.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Reference_Trajectory.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Reference_Trajectory.memorySize" Type="1">30000000</Property>
-    <ReadOnlyProperty LongName="Reference_Trajectory.pythonPID" Type="1">7908</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Reference_Trajectory.pythonPID" Type="1">8800</ReadOnlyProperty>
     <Property LongName="Reference_Trajectory.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Reference_Trajectory.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Reference_Trajectory.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -880,7 +880,7 @@
     <Property LongName="Simu_button.priority" Type="1">128</Property>
     <Property LongName="Simu_button.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="Smooth_braking_value" Model="bypass" Version="1.5.0" x="1032" y="416" z="0">
+  <Component InstanceName="Smooth_braking_value" Model="bypass" Version="1.5.0" x="1024" y="416" z="0">
     <Input LongName="Smooth_braking_value.input_1" Name="input_1">
       <Property LongName="Smooth_braking_value.input_1.readerType" Type="1">0</Property>
       <Property LongName="Smooth_braking_value.input_1.subsampling" Type="1">1</Property>
@@ -1029,7 +1029,7 @@
     <Property LongName="speed_to_simu.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="speed_to_simu.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="speed_to_simu.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="speed_to_simu.pythonPID" Type="1">14912</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="speed_to_simu.pythonPID" Type="1">13116</ReadOnlyProperty>
     <Property LongName="speed_to_simu.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="speed_to_simu.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="speed_to_simu.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -1070,7 +1070,7 @@
     <Property LongName="switcher_0.priority" Type="1">128</Property>
     <Property LongName="switcher_0.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="switcher_latlon" Model="switcher" Version="1.3" x="288" y="296" z="0">
+  <Component InstanceName="switcher_latlon" Model="switcher" Version="1.3" x="280" y="296" z="0">
     <Input LongName="switcher_latlon.input_1" Name="input_1">
       <Property LongName="switcher_latlon.input_1.readerType" Type="1">0</Property>
       <Property LongName="switcher_latlon.input_1.subsampling" Type="1">1</Property>
@@ -1095,7 +1095,7 @@
     <Property LongName="switcher_latlon.priority" Type="1">128</Property>
     <Property LongName="switcher_latlon.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="switcher_RPY" Model="switcher" Version="1.3" x="288" y="488" z="0">
+  <Component InstanceName="switcher_RPY" Model="switcher" Version="1.3" x="280" y="488" z="0">
     <Input LongName="switcher_RPY.input_1" Name="input_1">
       <Property LongName="switcher_RPY.input_1.readerType" Type="1">0</Property>
       <Property LongName="switcher_RPY.input_1.subsampling" Type="1">1</Property>
@@ -1175,7 +1175,7 @@
     <Property LongName="UTM_Converter.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="UTM_Converter.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="UTM_Converter.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="UTM_Converter.pythonPID" Type="1">5868</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="UTM_Converter.pythonPID" Type="1">9916</ReadOnlyProperty>
     <Property LongName="UTM_Converter.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="UTM_Converter.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="UTM_Converter.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -1191,7 +1191,7 @@
     <Property LongName="UTM_Converter.priority" Type="1">128</Property>
     <Property LongName="UTM_Converter.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="Vectorizer_0" Model="Vectorizer" Version="4.0.2" x="416" y="48" z="0">
+  <Component InstanceName="Vectorizer_0" Model="Vectorizer" Version="4.0.2" x="456" y="48" z="0">
     <Input LongName="Vectorizer_0.input1" Name="input1">
       <Property LongName="Vectorizer_0.input1.readerType" Type="1">4</Property>
       <Property LongName="Vectorizer_0.input1.subsampling" Type="1">1</Property>
@@ -1315,7 +1315,7 @@
     <Property LongName="Vectorizer_1_1.priority" Type="1">128</Property>
     <Property LongName="Vectorizer_1_1.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="Vehicle" Model="PythonBridge" Version="3.2.0" x="552" y="48" z="0">
+  <Component InstanceName="Vehicle" Model="PythonBridge" Version="3.2.0" x="648" y="48" z="0">
     <Input LongName="Vehicle.in" Name="in">
       <Property LongName="Vehicle.in.readerType" Type="1">0</Property>
       <Property LongName="Vehicle.in.subsampling" Type="1">1</Property>
@@ -1370,7 +1370,7 @@
     <Property LongName="Vehicle.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Vehicle.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Vehicle.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="Vehicle.pythonPID" Type="1">15196</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Vehicle.pythonPID" Type="1">216</ReadOnlyProperty>
     <Property LongName="Vehicle.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Vehicle.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Vehicle.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -1427,7 +1427,7 @@
     <Property LongName="Vehicle.priority" Type="1">128</Property>
     <Property LongName="Vehicle.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="Velocity" Model="Gauge" Version="2.0.4" x="1720" y="-80" z="0">
+  <Component InstanceName="Velocity" Model="Gauge" Version="2.0.4" x="1720" y="-120" z="0">
     <Input LongName="Velocity.input" Name="input">
       <Property LongName="Velocity.input.readerType" Type="1">2</Property>
       <Property LongName="Velocity.input.subsampling" Type="1">1</Property>
@@ -1475,7 +1475,7 @@
     <Property LongName="Yaw_Reader.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Yaw_Reader.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Yaw_Reader.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="Yaw_Reader.pythonPID" Type="1">15956</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Yaw_Reader.pythonPID" Type="1">8064</ReadOnlyProperty>
     <Property LongName="Yaw_Reader.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Yaw_Reader.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Yaw_Reader.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -1491,8 +1491,6 @@
     <Property LongName="Yaw_Reader.priority" Type="1">128</Property>
     <Property LongName="Yaw_Reader.autoStart" Type="0">true</Property>
   </Component>
-  <Connection Output="Reference_Trajectory.ref_y" Input="Angle_Erreur_Controler.TargetY"/>
-  <Connection Output="Reference_Trajectory.ref_x" Input="Angle_Erreur_Controler.TargetX"/>
   <Connection Output="speed_to_simu.Break" Input="Brake_converter.input"/>
   <Connection Output="data_vectorizer_0.o_data" Input="Change_Coordinates.dataRobot"/>
   <Connection Output="Yaw_Reader.out" Input="data_vectorizer_0.i_data_1"/>
@@ -1506,22 +1504,24 @@
   <Connection Output="Vehicle.imageCamera" Input="Image_Processing.in"/>
   <Connection Output="is_auto_pilot.state0" Input="is_auto_pilot_converter.input"/>
   <Connection Output="is_reverse_0.o_float64" Input="is_reverse_converter.input"/>
+  <Connection Output="Reference_Trajectory.ref_y" Input="Lateral_Controller.TargetY"/>
+  <Connection Output="Reference_Trajectory.ref_x" Input="Lateral_Controller.TargetX"/>
   <Connection Output="Change_Coordinates.targetXY" Input="Lidar.object_0_data"/>
   <Connection Output="Reference_Trajectory.viewer" Input="Lidar.object_1_data"/>
   <Connection Output="Vectorizer_1.outputFloat" Input="Lidar.object_2_data"/>
-  <Connection Output="Angle_Erreur_Controler.targetpoints" Input="Lidar.object_4_data"/>
+  <Connection Output="Lateral_Controller.targetpoints" Input="Lidar.object_4_data"/>
   <Connection Output="Offset.output" Input="Lidar.object_5_data"/>
-  <Connection Output="Reference_Trajectory.ref_y" Input="Longi_Speed.TargetY"/>
-  <Connection Output="Reference_Trajectory.ref_x" Input="Longi_Speed.TargetX"/>
-  <Connection Output="data_vectorizer_1.o_data" Input="Longi_Speed.obstacle_info"/>
+  <Connection Output="Reference_Trajectory.ref_y" Input="Longi_Speed_Controller.TargetY"/>
+  <Connection Output="Reference_Trajectory.ref_x" Input="Longi_Speed_Controller.TargetX"/>
+  <Connection Output="data_vectorizer_1.o_data" Input="Longi_Speed_Controller.obstacle_info"/>
   <Connection Output="Vehicle.ptCloud" Input="Offset.input"/>
   <Connection Output="switcher_latlon.output" Input="Recorder.in"/>
   <Connection Output="is_Record.state0" Input="Recorder.recording"/>
   <Connection Output="Vectorizer_1_1.outputFloat" Input="Reference_Trajectory.GPS_xy"/>
   <Connection Output="detect_points_1.out" Input="Smooth_braking_value.input_1"/>
-  <Connection Output="Angle_Erreur_Controler.Lat_cmd" Input="SocketSender_1.input0"/>
+  <Connection Output="Lateral_Controller.Lat_cmd" Input="SocketSender_1.input0"/>
   <Connection Output="Vehicle.speedKmh" Input="speed_to_simu.SpeedKmh"/>
-  <Connection Output="Longi_Speed.speed" Input="speed_to_simu.SpeedCmd"/>
+  <Connection Output="Longi_Speed_Controller.speed" Input="speed_to_simu.SpeedCmd"/>
   <Connection Output="switcher_RPY.output" Input="switcher_0.input_1"/>
   <Connection Output="is_Record.state0" Input="switcher_0.index"/>
   <Connection Output="SocketReceiver_1.position_f64_LatitudeDeg_LongitudeDeg_AltitudeRef_AltitudeM" Input="switcher_latlon.input_1"/>
@@ -1537,7 +1537,7 @@
   <Connection Output="is_reverse_converter.output" Input="Vectorizer_0.input2"/>
   <Connection Output="Throttle_converter.output" Input="Vectorizer_0.input3"/>
   <Connection Output="Brake_converter.output" Input="Vectorizer_0.input4"/>
-  <Connection Output="Angle_Erreur_Controler.Lat_cmd" Input="Vectorizer_0.input5"/>
+  <Connection Output="Lateral_Controller.Lat_cmd" Input="Vectorizer_0.input5"/>
   <Connection Output="detect_points_1.points_in_bound_right_out" Input="Vectorizer_1.input1"/>
   <Connection Output="detect_points_1.points_in_bound_front_out" Input="Vectorizer_1.input2"/>
   <Connection Output="Change_Coordinates.targetX" Input="Vectorizer_1_1.input1"/>
@@ -1676,16 +1676,14 @@
     <ComponentBox InstanceName="yawreader_1" reversed="false">
       <Description/>
     </ComponentBox>
-    <CommentBox x="404" y="280" z="-1" w="1310" h="525" align="2" bgcolor="ff0000" fgcolor="0">S8 (lat control)&#13;
+    <CommentBox x="404" y="281" z="-1" w="1308" h="524" align="2" bgcolor="ff0000" fgcolor="0">Controller&#13;
 </CommentBox>
-    <CommentBox x="95" y="280" z="-1" w="310" h="349" align="2" bgcolor="80ff00" fgcolor="0">Simu / AMI Switching&#13;
+    <CommentBox x="91" y="281" z="-1" w="314" h="525" align="2" bgcolor="80ff00" fgcolor="0">Simu / AMI Switching&#13;
 </CommentBox>
-    <CommentBox x="91" y="-146" z="-1" w="1044" h="428" align="2" bgcolor="ffff" fgcolor="0">Simulation&#13;
+    <CommentBox x="91" y="-146" z="-1" w="1621" h="428" align="2" bgcolor="ffff" fgcolor="0">Simulation&#13;
 </CommentBox>
     <ConnectionShape InstanceName="angle_erreur.x_y" color="0"/>
     <ConnectionShape InstanceName="Angle_Erreur_Controler.Fin" color="0"/>
-    <ConnectionShape InstanceName="Angle_Erreur_Controler.TargetX" color="0"/>
-    <ConnectionShape InstanceName="Angle_Erreur_Controler.TargetY" color="0"/>
     <ConnectionShape InstanceName="angleErreur.input_1" color="0"/>
     <ConnectionShape InstanceName="AngleErreur_1.Fin" color="0"/>
     <ConnectionShape InstanceName="AngleErreur_1.TargetX" color="0"/>
@@ -1747,6 +1745,8 @@
     <ConnectionShape InstanceName="Jostik.input_0" color="0"/>
     <ConnectionShape InstanceName="JPEGDecompress_15.input" color="0"/>
     <ConnectionShape InstanceName="JPEGDecompress_15_1.input" color="0"/>
+    <ConnectionShape InstanceName="Lateral_Controller.TargetX" color="0"/>
+    <ConnectionShape InstanceName="Lateral_Controller.TargetY" color="0"/>
     <ConnectionShape InstanceName="Led_1.input0" color="0"/>
     <ConnectionShape InstanceName="Led_1.input1" color="0"/>
     <ConnectionShape InstanceName="Lidar.object_0_data" color="0"/>
@@ -1755,10 +1755,10 @@
     <ConnectionShape InstanceName="Lidar.object_4_data" color="0"/>
     <ConnectionShape InstanceName="Lidar.object_5_data" color="0"/>
     <ConnectionShape InstanceName="Longi_speed.A" color="0"/>
-    <ConnectionShape InstanceName="Longi_Speed.obstacle_info" color="0"/>
     <ConnectionShape InstanceName="Longi_speed.Stop" color="0"/>
-    <ConnectionShape InstanceName="Longi_Speed.TargetX" color="0"/>
-    <ConnectionShape InstanceName="Longi_Speed.TargetY" color="0"/>
+    <ConnectionShape InstanceName="Longi_Speed_Controller.obstacle_info" color="0"/>
+    <ConnectionShape InstanceName="Longi_Speed_Controller.TargetX" color="0"/>
+    <ConnectionShape InstanceName="Longi_Speed_Controller.TargetY" color="0"/>
     <ConnectionShape InstanceName="numbers_converter_12.input" color="0"/>
     <ConnectionShape InstanceName="numbers_converter_12_13.input" color="0"/>
     <ConnectionShape InstanceName="numbers_converter_1_1_1.input" color="0"/>

@@ -171,7 +171,7 @@ class rtmaps_python(BaseComponent):
         len_list = len(self.inputs["GPS_xy"].ioelt.data)
         # x values are the first half of the input
         gps_x = self.inputs["GPS_xy"].ioelt.data[0:int(len_list / 2 -1)]
-        decalage = self.inputs["GPS_xy"].ioelt.data[len_list -1] # use the value from detect points to decal the trajectory and dodge the obsatcle
+        decalage = self.inputs["GPS_xy"].ioelt.data[len_list -1]  # use the value from detect points to decal the trajectory and dodge the obsatcle
         for j in range(len(gps_x)):        
             gps_x[j] = gps_x[j] - decalage
 

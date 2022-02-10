@@ -25,6 +25,14 @@ In /python_script
 Change line 15 the path where the reference trajectory needs to be recorded :
 C:/Users/XXX XXX/Desktop/RtMapsGit/Rtmaps_Autopilot_Project/AMI_Project/data/record_data.xlsx
 
+In /python_script
+/Image_Processing_AMI.py
+Change line 415 and 417 the path where the trained AI models are :
+for guide signs on the road
+C:/Users/XXX XXX/Desktop/RtMapsGit/Rtmaps_Autopilot_Project/AMI_Project/models/road_trained_5.p
+for trafic signs
+C:/Users/XXX XXX/Desktop/RtMapsGit/Rtmaps_Autopilot_Project/AMI_Project/models/sign_trained_s0.p
+
 ****************************************************************************************************
 To configure your python-bridge
 Use command	where python	in your command window to find your python 3.7 installation path for example :
